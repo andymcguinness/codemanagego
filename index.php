@@ -23,6 +23,7 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">Code, Manage, Go!</h1>
+                <div class="sign-in">Sign In</div>
             </header>
         </div>
 
