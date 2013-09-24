@@ -23,17 +23,6 @@ textarea { resize: vertical; }
 body { font: 16px/26px Helvetica, Helvetica Neue, Arial; }
 .wrapper { width: 90%; margin: 0 5%; }
 
-/* ===================
-    ALL: CMG Theme
-   =================== */
-
-.header-container { border-bottom: 15px solid #4e515b; }
-.footer-container, .main aside { border-top: 15px solid #4e515b; }
-.header-container, .footer-container, .main aside { background: #535869; }
-.title { color: #9ebd9a; }
-::selection { background: #9ebd9a; color: #FFF; }
-::-moz-selection { background: #9ebd9a; color: #FFF; }
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -62,19 +51,25 @@ nav a:hover { text-decoration: underline; }
    Author's custom styles
    ========================================================================== */
 
+.header-container { border-bottom: 15px solid #4e515b; }
+.footer-container, .main aside { border-top: 15px solid #4e515b; }
+.header-container, .footer-container, .main aside { background: #535869; }
+.main-container { background: #c2c2c2; }
 
+.title { color: #9ebd9a; }
 
+::selection { background: #9ebd9a; color: #FFF; }
+::-moz-selection { background: #9ebd9a; color: #FFF; }
 
+h1 { color: #535869; }
+ul { list-style-type: none; }
+.copyright { font-weight: normal; color: #fbebdc; font-size: 0.8em; }
+.intro p { padding-left: 10px; }
 
+/*.pages li { background: #5f4f5a; height: 30px; width: 200px; text-align: center; display: table-cell; vertical-align: middle; padding: 10px; }
+.pages { display: table; table-layout: fixed; }*/
 
-
-
-
-
-
-
-
-
+.pages li { background: #5f4f5a; width: 200px; padding: 10px; margin: 10px; text-align: center; color: #9ebd9a; border-bottom: solid 5px #473b44; display: inline-block; }
 
 /* ==========================================================================
    Media Queries
