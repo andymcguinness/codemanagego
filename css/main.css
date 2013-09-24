@@ -51,10 +51,12 @@ nav a:hover { text-decoration: underline; }
    Author's custom styles
    ========================================================================== */
 
+body { background: #535869; }
 .header-container { border-bottom: 15px solid #4e515b; }
 .main aside { border-top: 15px solid #4e515b; }
 .header-container, .footer-container, .main aside { background: #535869; }
 .main-container { background: #c2c2c2; }
+.sidebar-container { background: #a2a2a2; }
 
 .title, .title a, .pages li a { color: #9ebd9a; }
 .title a, .pages li a { text-decoration: none; }
@@ -71,6 +73,9 @@ ul { list-style-type: none; padding: 0px; margin: 0px; }
 
 .pages li { background: #5f4f5a; width: 200px; padding: 10px; margin: 10px; text-align: center; color: #9ebd9a; border-bottom: solid 5px #473b44; display: inline-block; }
 .pages li:hover {background: #473b44; color: #7e967a; }
+
+.sidebar-container { width: 30%; float: left; height: 100%; padding: 10px; }
+.profile .main-container { width: 70%; float: right; }
 
 /* ==========================================================================
    Media Queries

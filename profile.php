@@ -29,9 +29,16 @@
 
         <div class="sidebar-container">
             <header>Weclome, <strong>Example U.</strong>!</header>
+            <div class="content">
+                <ul>
+                    <li>Projects</li>
+                    <li>Task Lists</li>
+                    <li>File Gallery</li>
+                </ul>
+            </div>
         </div>
         
-        <div class="main-container">
+        <div class="profile main-container">
             <div class="main wrapper clearfix">
                 
             </div> <!-- #main -->
