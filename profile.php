@@ -27,20 +27,13 @@
             </header>
         </div>
 
+        <div class="sidebar-container">
+            <header>Weclome, <strong>Example U.</strong>!</header>
+        </div>
+        
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <section class="intro">
-                    <h1>Hello, and welcome to my site!</h1>
-                    
-                    <p>This is the index page for my fantabulous website, called Code, Manage, Go! Feel free to have a look at the following user interfaces:</p>
-                    <ul class="pages">
-                        <a href="profile.php"><li>Profile Page</li></a>
-                        <li>Upload Page</li>
-                        <li>Files Page</li>
-                        <li>Lists Page</li>
-                        <li>Example List Page</li>
-                    </ul>
-                </section>
+                
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 

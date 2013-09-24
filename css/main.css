@@ -56,7 +56,9 @@ nav a:hover { text-decoration: underline; }
 .header-container, .footer-container, .main aside { background: #535869; }
 .main-container { background: #c2c2c2; }
 
-.title { color: #9ebd9a; }
+.title, .title a, .pages li a { color: #9ebd9a; }
+.title a, .pages li a { text-decoration: none; }
+.title a:hover { color: #7e967a; }
 .sign-in { float: right; margin: 15px; padding: 5px; width: 100px; background: #9ebd9a; text-align: center; border-bottom: 4px solid #7e967a; color: #5f4f5a; }
 
 ::selection { background: #9ebd9a; color: #FFF; }
@@ -67,10 +69,8 @@ ul { list-style-type: none; padding: 0px; margin: 0px; }
 .copyright { font-weight: normal; color: #c2c2c2; font-size: 0.8em; text-align: center; }
 .intro p { padding-left: 10px; }
 
-/*.pages li { background: #5f4f5a; height: 30px; width: 200px; text-align: center; display: table-cell; vertical-align: middle; padding: 10px; }
-.pages { display: table; table-layout: fixed; }*/
-
 .pages li { background: #5f4f5a; width: 200px; padding: 10px; margin: 10px; text-align: center; color: #9ebd9a; border-bottom: solid 5px #473b44; display: inline-block; }
+.pages li:hover {background: #473b44; color: #7e967a; }
 
 /* ==========================================================================
    Media Queries
