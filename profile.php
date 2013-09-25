@@ -15,7 +15,7 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body class="profile">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -27,20 +27,28 @@
             </header>
         </div>
 
-        <div class="sidebar-container">
-            <header>Weclome, <strong>Example U.</strong>!</header>
-            <div class="content">
+        <div class="sidebar-container profile">
+            <img class="profile-img" src="http://placehold.it/60x60" />
+            <header class="username">Weclome, <strong>Example U.</strong>!</header>
+            <section class="content">
                 <ul>
-                    <li>Projects</li>
-                    <li>Task Lists</li>
-                    <li>File Gallery</li>
+                    <li><a>Projects</a></li>
+                    <li><a>Task Lists</a></li>
+                    <li><a>File Gallery</a></li>
                 </ul>
-            </div>
+            </section>
         </div>
         
-        <div class="profile main-container">
+        <div class="main-container profile">
             <div class="main wrapper clearfix">
+                <section class="profile-content">
+                    <h3>Projects</h3>
                 
+                    <ul>
+                        <li>Code, Manage, Go!</li>
+                        <li>Responsive Redesign</li>
+                    </ul>
+                </section>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
