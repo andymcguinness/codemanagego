@@ -10,11 +10,11 @@
         <meta name="description" content="Website for the Code, Manage, Go! platform.">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="http://localhost/lis4368/css/normalize.css">
+        <link rel="stylesheet" href="http://localhost/lis4368/css/main.css">
+        <link rel="stylesheet" href="http://localhost/lis4368/css/foundation.css">
 
-        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="http://localhost/lis4368/js/vendor/custom.modernizr.js"></script>
     </head>
     
     <body>
