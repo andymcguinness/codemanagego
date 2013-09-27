@@ -9,9 +9,9 @@
                 <div class="row">
                     <ul class="pages small-12 small-centered columns">
                         <a href="profile.php"><li>Profile Page</li></a>
-                        <li>Upload Page</li>
-                        <li>Files Page</li>
-                        <li>Lists Page</li>
+                        <a href="upload.php"><li>Upload Page</li></a>
+                        <a href="files.php"><li>Files Page</li></a>
+                        <a href="lists.php"><li>Lists Page</li></a>
                         <li>Example List Page</li>
                     </ul>
                 </div>

@@ -1,21 +1,7 @@
 <?php require_once('header.php'); ?>
 
         <div class="row">
-            <div class="profile-sidebar large-3 small-12 columns">
-                <div class="row">
-                    <img class="small-2 columns profile-img" src="http://placehold.it/60x60" />
-                    <div class="small-9 columns username">Weclome, <strong>Cat McGuinness</strong>!</div>
-                </div>
-                
-                <section class="content">
-                    <ul>
-                        <a><li>Teams</li></a>
-                        <a><li>Projects</li></a>
-                        <a><li>Task Lists</li></a>
-                        <a><li>File Gallery</li></a>
-                    </ul>
-                </section>
-            </div>
+            <?php require_once('sidebar.php'); ?>
             
             <div class="profile-main large-8 small-12 columns">
                 <section class="profile-content">
@@ -40,6 +26,7 @@
                                     <ul class="project-sub-content">
                                         <li>header.php</li>
                                         <li>footer.php</li>
+                                        <li>sidebar.php</li>
                                         <li>index.php</li>
                                         <li>profile.php</li>
                                         <li>upload.php</li>
@@ -68,12 +55,7 @@
                     <ul class="files">
                         <li>header.php</li>
                         <li>footer.php</li>
-                        <li>index.php</li>
-                        <li>profile.php</li>
-                        <li>upload.php</li>
-                        <li>files.php</li>
-                        <li>lists.php</li>
-                        <li>lists/list-name.php</li>
+                        <li>sidebar.php</li>
                         <li>main.css</li>
                     </ul>
                 </section>
