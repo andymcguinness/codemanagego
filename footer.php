@@ -1,9 +1,8 @@
 
-        <div class="footer-container">
-            <footer class="wrapper">
-                <div class="copyright">Copyright Maia "Cat" McGuinness 2013</div>
-            </footer>
-        </div>    
+        
+        <footer class="row">
+                <div class="small-12 columns copyright">Copyright Maia "Cat" McGuinness 2013</div>
+        </footer>  
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
