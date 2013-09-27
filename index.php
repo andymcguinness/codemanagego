@@ -12,7 +12,7 @@
                         <a href="upload.php"><li>Upload Page</li></a>
                         <a href="files.php"><li>Files Page</li></a>
                         <a href="lists.php"><li>Lists Page</li></a>
-                        <li>Example List Page</li>
+                        <a href="code-manage-go-overall-to-do.php"><li>Example List Page</li></a>
                     </ul>
                 </div>
             </div>
