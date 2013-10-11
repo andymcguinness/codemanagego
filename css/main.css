@@ -2,13 +2,21 @@
 
 /* ==== Building the Header ====*/
 
-header { background: #535869; border-bottom: 15px solid #4e515b; }
-    header .title { margin: 30px; font-size: 1.2em; font-weight: 800; }
+header { background: #555; border-bottom: 5px solid #444; }
+    header .title { margin: 30px auto 30px 10px; font-size: 1.2em; font-weight: 800; }
+    header .logo { margin: 30px 10px 30px 40%; width: 50px; height: 30px; position: relative; padding: 5px 23px 5px 23px; font-size: 1.2em; font-weight: 800; }
     header .sign-in { margin: 23px; }
-    header .sign-in, header .sign-in a { width: 100px; background: #9ebd9a; height: 35px; padding: 7px; text-align: center; border-bottom: 5px solid #4e515b; color: #676767; }
-        header .sign-in:hover { background: #4e515b; color: #fff; }
-    header .title a { color: #9ebd9a; }
-        header .title a:hover { color: #fff; }
+    header a { color: #9ebd9a; }
+        header a:hover { color: #fff; }
+
+/* Building the Logo */
+#hexaheader { background: #9ebd9a; color: #fff; border-radius: 2px; }
+#hexaheader:before { content: ""; position: absolute; top: -10px; left: 0; width: 0; height: 0; border-left: 25px solid transparent; border-right: 25px solid transparent; border-bottom: 10px solid #9ebd9a; border-radius: 2px; }
+#hexaheader:after { content: ""; position: absolute; bottom: -10px; left: 0; width: 0; height: 0; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 10px solid #9ebd9a; border-radius: 2px; }
+
+@media (max-width: 767px) {
+    header .logo { margin-left: 35%; }
+}
 
 /* ==== Building the Sidebar ====*/
 
@@ -20,11 +28,28 @@ header { background: #535869; border-bottom: 15px solid #4e515b; }
         .sidebar .content ul { list-style-type: none; }
             .sidebar .content ul a li { min-height: 20px; background: #d2d2d2; margin-bottom: 2px; text-align: center; color: #535869; }
             .sidebar .content ul a li:hover { background: #a2a2a2; color: #fff; }
+            
+@media screen and (min-width: 768px) {
+    .sidebar { min-height: 1000px; }
+}
 
 /* ==== General Styles ==== */
 
 ::selection { background: #9ebd9a; color: #FFF; }
 ::-moz-selection { background: #9ebd9a; color: #FFF; }
+
+html { background: #a2a2a2; }
+
+/* === Buttons === */
+
+.cmg-btn-large { display: inline-block; margin-bottom: 10px; width: 200px; background: #9ebd9a; height: 35px; padding: 2px; text-align: center; border-bottom: 2px solid #4e515b; color: #676767; border-radius: 5px; }
+    .cmg-btn-large:hover { background: #4e515b; color: #fff; }
+    
+.cmg-btn-medium { display: inline-block; margin-bottom: 10px; width: 150px; background: #9ebd9a; height: 35px; padding: 5px; text-align: center; border-bottom: 2px solid #4e515b; color: #676767; border-radius: 5px; }
+    .cmg-btn-medium:hover { background: #4e515b; color: #fff; }
+
+.cmg-btn-small { display: inline-block; margin-bottom: 10px; width: 100px; background: #9ebd9a; height: 35px; padding: 7px; text-align: center; border-bottom: 2px solid #4e515b; color: #676767; border-radius: 5px; }
+    .cmg-btn-small:hover { background: #4e515b; color: #fff; }
 
 /* ==== Building the Footer ==== */
 
@@ -36,9 +61,7 @@ footer { background: #a2a2a2; min-height: 40px; }
 
 /* ==== Index Page ==== */
 
-.pages { list-style-type: none; }
-.pages li, .pages li a { margin-bottom: 10px; width: 200px; background: #9ebd9a; height: 35px; padding: 2px; text-align: center; border-bottom: 5px solid #4e515b; color: #676767; }
-    .pages li:hover { background: #4e515b; color: #fff; }
+.pages li { list-style-type: none; }
 
 /* ==== Profile Page ==== */
 
@@ -57,7 +80,7 @@ footer { background: #a2a2a2; min-height: 40px; }
     .file-content ul a { color: #9ebd9a; }
         .file-content ul a:hover { color: #000; }
         
-/* ==== Files Page ==== */
+/* ==== List Page ==== */
 
 .list-content ul { list-style-type: none; margin-left: 20px; }
     .list-content ul a { color: #9ebd9a; }

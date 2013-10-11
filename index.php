@@ -1,4 +1,4 @@
-<?php require_once('header.php'); ?>
+<?php require_once('header-logged-out.php'); ?>
         
         <div class="row">
             <div class="small-10 small-centered columns intro">
@@ -8,11 +8,11 @@
                 
                 <div class="row">
                     <ul class="pages small-12 small-centered columns">
-                        <a href="profile.php"><li>Profile Page</li></a>
-                        <a href="upload.php"><li>Upload Page</li></a>
-                        <a href="files.php"><li>Files Page</li></a>
-                        <a href="lists.php"><li>Lists Page</li></a>
-                        <a href="code-manage-go-overall-to-do.php"><li>Example List Page</li></a>
+                        <li><a class="cmg-btn-large" href="profile.php">Profile Page</a></li>
+                        <li><a class="cmg-btn-large" href="upload.php">Upload Page</a></li>
+                        <li><a class="cmg-btn-large" href="files.php">Files Page</a></li>
+                        <li><a class="cmg-btn-large" href="lists">Lists Page</a></li>
+                        <li><a class="cmg-btn-large" href="lists/code-manage-go-overall-to-do.php">Example List Page</a></li>
                     </ul>
                 </div>
             </div>

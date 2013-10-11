@@ -10,7 +10,7 @@
         <meta name="description" content="Website for the Code, Manage, Go! platform.">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="http://localhost/lis4368/css/normalize.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="http://localhost/lis4368/css/main.css">
         <link rel="stylesheet" href="http://localhost/lis4368/css/foundation.css">
 

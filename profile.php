@@ -1,4 +1,4 @@
-<?php require_once('header.php'); ?>
+<?php require_once('header-logged-in.php'); ?>
 
         <div class="row">
             <?php require_once('sidebar.php'); ?>
