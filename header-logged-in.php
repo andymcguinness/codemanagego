@@ -27,12 +27,8 @@
             <div class="large-10 large-uncentered small-6 small-centered columns">
                 <a href="http://localhost/lis4368/index.php">
                     <div class="row">
-                        <div class="large-1 small-2 columns hide-for-medium-up">Menu</div>
-                        <div class="large-1 small-10 columns"><div id="hexaheader" class="logo">!</div></div>
-                        <div class="large-10 columns hide-for-small"><div class="title">Code, Manage, Go!</div></div>
+                        <div class="large-1 small-12 columns"><div id="hexaheader" class="logo">!</div></div>
+                        <div class="large-11 columns hide-for-small"><div class="title">Code, Manage, Go!</div></div>
                 </a>
             </div>
         </header>
-        
-        <div class="container">
-            <div class="mp-pusher" id="mp-pusher">
