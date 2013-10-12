@@ -12,6 +12,8 @@ class User {
     protected $isManager;
     
     /* Entity relationship */
+    
+    // Between User and Project
     protected $assignments;
     
     public function setAssignment(array $assignments) {
@@ -20,6 +22,17 @@ class User {
     
     public function projectsAssigned(Project $project) {
         $this->assignments[] = $project;
+    }
+    
+    // Between User and File
+    protected $uploads;
+    
+    public function setUploads(array $uploads) {
+        $this->uploads = $uploads;
+    }
+    
+    public function filesUploaded(File $file) {
+        $this->uploads[] = $file;
     }
     
     /* Constructor */

@@ -12,6 +12,8 @@ class Project {
     protected $tags;
     
     /* Entity relationship */
+    
+    // Between Project and User
     protected $assignment;
     
     public function setAssignment(array $assignment) {
@@ -55,7 +57,9 @@ class Project {
     }
     
     public function setTags($tags) {
-        $this->tags = $tags;
+        foreach ($tags as $tag) {
+            $this->tags[] = $tag;
+        }
     }
 }
 
