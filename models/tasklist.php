@@ -1,11 +1,11 @@
 <?php
 /* This is the List class */
 
-class List {
+class TaskList {
     
     /* Protected properties */
     protected $id;
-    protected $tag;
+    protected $tags;
     
     /* Entity relationship */
     
@@ -16,7 +16,7 @@ class List {
         $this->tasks = $tasks;
     }
     
-    public function assignProject(Task task) {
+    public function assignProject(Task $task) {
         $this->tasks[] = $task;
     }
     
@@ -24,7 +24,7 @@ class List {
     protected $members;
     
     public function setMembers(array $members) {
-        $this-members = $members;
+        $this->members = $members;
     }
     
     public function listMembers(User $user) {
