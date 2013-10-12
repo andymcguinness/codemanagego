@@ -54,7 +54,6 @@ class User {
         return $this->$item;
     }
     
-    // Does what it says on the box
     public function setUserName($userName) {
         $this->userName = $userName;
     }

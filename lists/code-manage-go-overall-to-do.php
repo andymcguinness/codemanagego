@@ -1,37 +1,46 @@
-<?php require_once('../header-logged-in.php'); ?>
+<?php
+include('../header-logged-in.php');
+include('http://localhost/lis4368/models/tasklist.class.php');
+include('http://localhost/lis4368/models/task.class.php');
+
+// Creating the Code, Manage, Go! to do list
+//$tD = new TaskList('Code, Manage, Go! Overall To-Do');
+
+// Sticking some tasks in an array
+$toDoTasks = array();
+
+$toDoTasks[] = new Task('Create all pages');
+$toDoTasks[] = new Task('Link all pages');
+$toDoTasks[] = new Task('Update a color');
+
+// Making the tasks
+//$toDo->defineTasks($toDoTasks);
+
+?>
 
         <div class="row">
             <?php require_once('../sidebar.php'); ?>
             
             <div class="list-page-content large-8 small-12 columns">
-                <h3 class="list-page-header">Code, Manage, Go! Overall To-Do</h3>
+                <h3 class="list-page-header"><?php echo $toDo->title; ?></h3>
                 
-                <div class="checklist">
-                    <form class="custom">
-                        <label for="checkbox1">
-                            <input type="checkbox" id="checkbox1" style="display: none;">
-                            <span class="custom checkbox"></span> Create all pages
-                        </label>
-                    </form>
-                </div>
+                <?php // Let's output the tasks, shall we?
                 
-                <div class="checklist">
-                    <form class="custom">
-                        <label for="checkbox2">
-                            <input type="checkbox" id="checkbox2" style="display: none;">
-                            <span class="custom checkbox"></span> Link all pages
-                        </label>
-                    </form>
-                </div>
+                $i = 1; // initialize counter
+                foreach ($toDoTasks as $task) {
+                    echo '<div class="checklist">';
+                    echo '    <form class="custom">';
+                    echo '        <label for="checkbox' . $i .'">';
+                    echo '             <input type="checkbox" id="checkbox' . $i . '" style="display: none;">';
+                    echo '             <span class="custom checkbox"></span>' . $task->title;
+                    echo '        </label>';
+                    echo '    </form>';
+                    echo '</div>';
+                    
+                    $i++; // increment
+                }
                 
-                <div class="checklist">
-                    <form class="custom">
-                        <label for="checkbox3">
-                            <input type="checkbox" id="checkbox3" style="display: none;">
-                            <span class="custom checkbox"></span> Update a color
-                        </label>
-                    </form>
-                </div>
+                ?>
                 
             </div>
         </div>

@@ -1,7 +1,7 @@
 <?php
-/* This is the Project class */
+/* This is the List class */
 
-class Project {
+class Task {
     
     /* Protected properties */
     protected $id;
@@ -13,29 +13,28 @@ class Project {
     
     /* Entity relationship */
     
-    // Between Project and User
-    protected $assignment;
+    // Between Task and User
+    protected $assignees;
     
-    public function setAssignment(array $assignment) {
-        $this->assignment = $assignment;
+    public function setAssignees(array $assignees) {
+        $this->assignees = $assignees;
     }
     
-    public function assignProject(User $user) {
-        $this->assignment[] = $user;
+    public function assignTasks(User $user) {
+        $this->assignees[] = $user;
     }
     
     /* Constructor */
     
     public function __construct($title){
-        $this->createdDate = date("Y/m/d H:i:s"); // Setting the created date to the system's time
+        $this->createdDate = date("Y/m/d H:i:s"); // Setting the created date to the system's date
         $this->setTitle($title);
-        $this->isComplete = false; // Assuming a project isn't complete upon creation
     }
     
     /* Interface methods */
     
     // Function to return any property (DRY)
-    public function __get($item) {
+    public function __get($item) { // Keeping this in case I add any properties
         return $this->$item;
     }
     
@@ -55,11 +54,10 @@ class Project {
         }
     }
     
-    public function setTags($tags) {
+    public function setTags($tags) { // Can have multiple tags, so treating it like an array
         foreach ($tags as $tag) {
             $this->tags[] = $tag;
         }
     }
 }
-
 ?>

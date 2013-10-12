@@ -39,7 +39,6 @@ class File {
         return $this->$item;
     }
     
-    // Does what it says on the box
     public function setTitle($title) {
         $this->title = $title;
     }

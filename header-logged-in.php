@@ -10,10 +10,9 @@
         <meta name="description" content="Website for the Code, Manage, Go! platform.">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="http://localhost/lis4368/css/normalize.css">
         <link rel="stylesheet" href="http://localhost/lis4368/css/main.css">
         <link rel="stylesheet" href="http://localhost/lis4368/css/foundation.css">
-        <link rel="stylesheet" href="http://localhost/lis4368/css/component.css">
 
         <script src="http://localhost/lis4368/js/vendor/custom.modernizr.js"></script>
     </head>
@@ -29,6 +28,7 @@
                     <div class="row">
                         <div class="large-1 small-12 columns"><div id="hexaheader" class="logo">!</div></div>
                         <div class="large-11 columns hide-for-small"><div class="title">Code, Manage, Go!</div></div>
+                    </div>
                 </a>
             </div>
         </header>
