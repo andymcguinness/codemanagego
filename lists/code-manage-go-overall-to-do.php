@@ -1,7 +1,10 @@
 <?php
-include('../header-logged-in.php');
-include('../models/task.class.php');
-include('../models/tasklist.classs.php');
+require_once('../header-logged-in.php');
+require_once('../models/task.class.php');
+require_once('../models/tasklist.class.php');
+
+// Creating a task list
+$list1 = new TaskList('Code, Manage, Go! Overall To-Do');
 
 // Sticking some tasks in an array
 $listTasks[] = new Task('Create pages');
@@ -15,7 +18,7 @@ $listTasks[] = new Task('Make a MySQL database');
             <?php require_once('../sidebar.php'); ?>
             
             <div class="list-page-content large-8 small-12 columns">
-                <h3 class="list-page-header">Code, Manage, Go! Overall To-Do</h3>
+                <h3 class="list-page-header"><?php echo $list1->__get(title); ?></h3>
                 
                 <?php // Let's output the tasks, shall we?
                     

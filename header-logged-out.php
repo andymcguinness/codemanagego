@@ -11,10 +11,10 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="http://localhost/lis4368/css/main.css">
-        <link rel="stylesheet" href="http://localhost/lis4368/css/foundation.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/foundation.css">
 
-        <script src="http://localhost/lis4368/js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/custom.modernizr.js"></script>
     </head>
     
     <body>
@@ -23,6 +23,7 @@
         <![endif]-->
         
         <header class="row">
-            <div class="large-10 large-uncentered small-6 small-centered columns title"><a href="http://localhost/lis4368/index.php">Code, Manage, Go!</a></div>
+            <div class="large-1 small-12 columns"><div id="hexaheader" class="logo">!</div></div>
+            <div class="large-9 large-uncentered small-6 small-centered columns hide-for-small title"><a href="http://localhost/lis4368/index.php">Code, Manage, Go!</a></div>
             <a href="#"><div class="large-2 large-uncentered small-6 small-centered columns"><div class="sign-in cmg-btn-small">Sign In</div></div></a>
         </header>

@@ -18,7 +18,6 @@ class Task {
         $this->setTitle($title);
     }
     
-    
     /* Entity relationship */
     
     // Between Task and User

@@ -8,6 +8,13 @@ class TaskList {
     protected $title;
     protected $tags;
     
+    /* Constructor */
+    
+    public function __construct($title){
+        $this->setTitle($title);
+    }
+    
+    
     /* Entity relationship */
     
     // Between List and Task
@@ -30,12 +37,6 @@ class TaskList {
     
     public function listMembers(User $user) {
         $this->members[] = $user;
-    }
-    
-    /* Constructor */
-    
-    public function __construct($title){
-        $this->setTitle($title);
     }
     
     /* Interface methods */
