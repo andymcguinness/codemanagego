@@ -7,7 +7,7 @@
                 <section class="content">
                     <ul>
                         <li><a>Projects</a></li>
-                        <li><a href="/lists">Task Lists</a></li>
+                        <li><a href="lists/index.php">Task Lists</a></li>
                         <li><a href="files.php">File Gallery</a></li>
                     </ul>
                 </section>
