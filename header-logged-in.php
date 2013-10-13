@@ -24,7 +24,7 @@
         
         <header class="row">
             <div class="large-10 large-uncentered small-6 small-centered columns">
-                <a href="http://localhost/lis4368/index.php">
+                <a href="index.php">
                     <div class="row">
                         <div class="large-1 small-12 columns"><div id="hexaheader" class="logo">!</div></div>
                         <div class="large-11 columns hide-for-small"><div class="title">Code, Manage, Go!</div></div>
