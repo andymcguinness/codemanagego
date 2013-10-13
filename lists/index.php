@@ -1,4 +1,4 @@
-<?php require_once('../header-logged-in.php'); ?>
+<?php require_once('../header-logged-in-second-level.php'); ?>
 
         <div class="row">
             <?php require_once('../sidebar.php'); ?>
@@ -15,4 +15,4 @@
             </div>
         </div>
 
-<?php require_once('../footer.php'); ?>
+<?php require_once('../footer-second-level.php'); ?>

@@ -1,5 +1,5 @@
 <?php
-require_once('../header-logged-in.php');
+require_once('../header-logged-in-second-level.php');
 require_once('../models/task.class.php');
 require_once('../models/tasklist.class.php');
 
@@ -42,4 +42,4 @@ $listTasks[] = new Task('Make a MySQL database');
             </div>
         </div>
 
-<?php require_once('../footer.php'); ?>
+<?php require_once('../footer-second-level.php'); ?>
