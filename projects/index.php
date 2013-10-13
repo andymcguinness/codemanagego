@@ -4,12 +4,12 @@
             <?php require_once('../sidebar-second-level.php'); ?>
             
             <div class="list-content large-8 small-12 columns">
-                <h3 class="list-header">All Lists</h3>
+                <h3 class="list-header">All Projects</h3>
                 
                 <ul class="lists">
-                    <li><a href="code-manage-go-overall-to-do.php">Code, Manage, Go! Overall To-Do</a></li>
-                    <li><a href="#">Code, Manage, Go! CSS Checklist</a></li>
-                    <li><a href="#">Code, Manage, Go! Functionality Checklist</a></li>
+                    <li><a href="code-manage-go.php">Code, Manage, Go!</a></li>
+                    <li><a href="#">Mobile Site Redesign</a></li>
+                    <li><a href="#">Ad Club Site</a></li>
                 </ul>
                 
             </div>

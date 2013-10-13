@@ -85,3 +85,10 @@ footer { background: #a2a2a2; min-height: 40px; }
 .list-content ul { list-style-type: none; margin-left: 20px; }
     .list-content ul a { color: #9ebd9a; }
         .list-content ul a:hover { color: #000; }
+        
+/* === Project Page === */
+
+.project-main .project-content ul { list-style-type: none; margin-left: 20px; }
+    .project-main .project-content ul ul { list-style-type: none; margin-bottom: 10px; }
+        .project-main .project-content ul ul ul { list-style-type: none; }
+    

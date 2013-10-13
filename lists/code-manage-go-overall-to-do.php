@@ -15,7 +15,7 @@ $listTasks[] = new Task('Make a MySQL database');
 ?>
 
         <div class="row">
-            <?php require_once('../sidebar.php'); ?>
+            <?php require_once('../sidebar-second-level.php'); ?>
             
             <div class="list-page-content large-8 small-12 columns">
                 <h3 class="list-page-header"><?php echo $list1->__get(title); ?></h3>

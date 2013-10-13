@@ -9,7 +9,9 @@
                     <!-- Teams -->
                     <h3 class="team-header">Your Teams</h3>
                     <ul class="teams">
-                        <li>Code, Manage, Go!</li>
+                        <li>Code, Manage, Go! Team</li>
+                        <li>Redesign Team</li>
+                        <li>Ad Club Team</li>
                     </ul>
                     
                     <!-- Projects -->
