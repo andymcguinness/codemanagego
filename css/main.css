@@ -26,8 +26,8 @@ header { background: #555; border-bottom: 5px solid #444; }
     
     .sidebar .content { margin: 10px 0 10px 0px; }
         .sidebar .content ul { list-style-type: none; }
-            .sidebar .content ul a li { min-height: 20px; background: #d2d2d2; margin-bottom: 2px; text-align: center; color: #535869; }
-            .sidebar .content ul a li:hover { background: #a2a2a2; color: #fff; }
+            .sidebar .content ul li a { min-height: 20px; display: block; background: #d2d2d2; margin-bottom: 2px; text-align: center; color: #535869; height: 100%; width: 100%; }
+            .sidebar .content ul li a:hover { background: #a2a2a2; color: #fff; }
             
 @media screen and (min-width: 768px) {
     .sidebar { min-height: 1000px; }

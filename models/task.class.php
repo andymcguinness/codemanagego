@@ -1,5 +1,5 @@
 <?php
-/* This is the List class */
+/* This is the Task class */
 
 class Task {
     
@@ -10,6 +10,14 @@ class Task {
     protected $createdDate;
     protected $isComplete;
     protected $tags;
+    
+    /* Constructor */
+    
+    public function __construct($title){        
+        $this->createdDate = date("Y/m/d H:i:s"); // Setting the created date to the system's date
+        $this->setTitle($title);
+    }
+    
     
     /* Entity relationship */
     
@@ -22,13 +30,6 @@ class Task {
     
     public function assignTasks(User $user) {
         $this->assignees[] = $user;
-    }
-    
-    /* Constructor */
-    
-    public function __construct($title){
-        $this->createdDate = date("Y/m/d H:i:s"); // Setting the created date to the system's date
-        $this->setTitle($title);
     }
     
     /* Interface methods */
