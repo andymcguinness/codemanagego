@@ -10,6 +10,7 @@ class User {
     protected $firstName;
     protected $email;
     protected $isManager;
+    protected $password;
     
     /* Entity relationship */
     
@@ -37,7 +38,7 @@ class User {
     
     /* Constructor */
     
-    public function __construct($userName, $lastName, $firstName, $email){ // You need all information to sign up
+    public function __construct($userName, $password, $lastName, $firstName, $email){ // You need all information to sign up
         
         // Testing to make sure first & last names are strings
         $this->setFirstName($firstName);
@@ -45,6 +46,7 @@ class User {
         
         $this->userName = $userName;
         $this->email = $email;
+        $this->password = $password;
     }
     
     /* Interface methods */

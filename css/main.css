@@ -91,4 +91,6 @@ footer { background: #a2a2a2; min-height: 40px; }
 .project-main .project-content ul { list-style-type: none; margin-left: 20px; }
     .project-main .project-content ul ul { list-style-type: none; margin-bottom: 10px; }
         .project-main .project-content ul ul ul { list-style-type: none; }
-    
+
+/* === Signup Pgae === */
+.error { color: #900; font-weight: bold; }
