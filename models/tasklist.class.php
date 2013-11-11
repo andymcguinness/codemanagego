@@ -4,9 +4,9 @@
 class TaskList {
     
     /* Protected properties */
-    protected $id;
-    protected $title;
-    protected $tags;
+    protected $lst_id;
+    protected $lst_title;
+    protected $lst_tags;
     
     /* Constructor */
     
@@ -46,8 +46,12 @@ class TaskList {
         return $this->$item;
     }
     
+    public function setID($id) {
+        $this->lst_id = $id;
+    }
+    
     public function setTitle($title) {
-        $this->title = $title;
+        $this->lst_title = $title;
     }
     
     public function setTags($tags) { // Can have multiple tags, so treating it like an array

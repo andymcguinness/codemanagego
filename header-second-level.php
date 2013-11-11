@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/foundation.css">
 
-        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="../js/vendor/custom.modernizr.js"></script>
     </head>
     
     <body>

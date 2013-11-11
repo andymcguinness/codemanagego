@@ -4,12 +4,13 @@
 class Project {
     
     /* Protected properties */
-    protected $id;
-    protected $title;
-    protected $dueDate;
-    protected $createdDate;
-    protected $isComplete;
-    protected $tags;
+    protected $pjt_id;
+    protected $pjt_title;
+    protected $pjt_due_date;
+    protected $pjt_created_date;
+    protected $pjt_is_complete;
+    protected $usr_id;
+    protected $pjt_tags;
     
     /* Entity relationship */
     
@@ -27,9 +28,9 @@ class Project {
     /* Constructor */
     
     public function __construct($title){
-        $this->createdDate = date("Y/m/d H:i:s"); // Setting the created date to the system's time
+        //$this->createdDate = date("Y/m/d H:i:s"); // Setting the created date to the system's time
         $this->setTitle($title);
-        $this->isComplete = false; // Assuming a project isn't complete upon creation
+        //$this->isComplete = false; // Assuming a project isn't complete upon creation
     }
     
     /* Interface methods */
@@ -39,26 +40,32 @@ class Project {
         return $this->$item;
     }
     
+    public function setID($id) {
+        $this->pjt_id = $id;
+    }
+    
     public function setTitle($title) {
-        $this->title = $title;
+        $this->pjt_title = $title;
     }
     
     public function setDueDate($dueDate) {
-        $this->dueDate = $dueDate;
+        $this->pjt_due_date = $dueDate;
+    }
+    
+    public function setCreatedDate($createdDate) {
+        $this->pjt_created_date = $createdDate;
     }
     
     public function setIsComplete($isComplete) {
-        if (gettype($isComplete) == 'boolean') {
-            $this->isComplete = $isComplete;            
-        } else {
-            user_error('Incorrect data type for variable isComplete. Please enter a bool and try again.');
-        }
+        $this->pjt_is_complete = $isComplete;
+    }
+    
+    public function setUserID($userID) {
+        $this->usr_id = $userID;
     }
     
     public function setTags($tags) {
-        foreach ($tags as $tag) {
-            $this->tags[] = $tag;
-        }
+        $this->pjt_tags = $tags;
     }
 }
 

@@ -2,9 +2,13 @@
 require_once('header.php');
 require_once('functions.php');
 require_once('models/user.class.php');
+require_once('db/UserMapper.php');
 
 // Error array
 $errors = array();
+
+// User Mapper
+$mapper = new UserMapper();
 
 if (count($_POST) > 0) {
 
