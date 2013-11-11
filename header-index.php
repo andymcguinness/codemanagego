@@ -25,5 +25,5 @@
         <header class="row">
             <div class="large-1 small-12 columns"><div id="hexaheader" class="logo">!</div></div>
             <div class="large-9 large-uncentered small-6 small-centered columns hide-for-small title"><a href="http://localhost/lis4368/index.php">Code, Manage, Go!</a></div>
-            <a href="signup.php"><div class="large-2 large-uncentered small-6 small-centered columns"><div class="sign-in cmg-btn-small">Sign Up</div></div></a>
+            <a href="sign-up.php"><div class="large-2 large-uncentered small-6 small-centered columns"><div class="sign-in cmg-btn-small">Sign Up</div></div></a>
         </header>
