@@ -38,14 +38,31 @@ class User {
     
     /* Constructor */
     
-    public function __construct($userName, $password, $lastName, $firstName, $email){ // You need all information to sign up
-        $this->setFirstName($firstName);
-        $this->setLastName($lastName);
+    public function __construct($userName= NULL, $password = NULL, $lastName = NULL, $firstName = NULL, $email = NULL){ // You need all information to sign up
         
-        $this->usr_username = $userName;
-        $this->usr_email = $email;
-        $this->usr_password = $password;
-        $this->usr_isManager = 'n';
+        if ($userName != NULL) {
+            $this->setFirstName($firstName);
+        }
+        
+        if ($lastName != NULL) {
+            $this->setLastName($lastName);
+        }
+        
+        if ($firstName != NULL) {
+            $this->usr_username = $userName;
+        }
+        
+        if ($email != NULL) {
+            $this->usr_email = $email;
+        }
+        
+        if ($password != NULL) {
+            $this->usr_password = $password;
+        }
+        
+        if ($this->usr_isManager === NULL) {
+            $this->usr_isManager = 'n';
+        }
     }
     
     /* Interface methods */
