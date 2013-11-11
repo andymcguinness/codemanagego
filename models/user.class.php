@@ -42,9 +42,10 @@ class User {
         $this->setFirstName($firstName);
         $this->setLastName($lastName);
         
-        $this->usr_userame = $userName;
+        $this->usr_username = $userName;
         $this->usr_email = $email;
         $this->usr_password = $password;
+        $this->usr_isManager = 'n';
     }
     
     /* Interface methods */
@@ -55,7 +56,7 @@ class User {
     }
     
     public function setUserName($userName) {
-        $this->userName = $userName;
+        $this->usr_username = $userName;
     }
     
     public function setFirstName($firstName) {
