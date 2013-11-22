@@ -140,6 +140,10 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 	.general-header .title .icon-code { color: #fff; }
 }
 
+@media (max-width: 40em) {
+	.general-header .title .icon-code { text-align: center; color: #fff; font-size: 3em; }
+	.general-header .title { padding: 0.5em; }
+}
 
 /* ==== CONTENT -- PROFILE PAGE ==== */
 
