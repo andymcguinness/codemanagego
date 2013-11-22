@@ -24,7 +24,7 @@
         
         <header class="row homepage">
             <div class="row">
-                <div class="large-6 large-push-3 medium-8 medium-push-2 small-1 small-push-5 columns title"><a href="http://localhost/lis4368/index.php"><i class="icon-code"></i> <div class="hide-for-small">Code, Manage, Go!</div></a></div>
+                <div class="large-6 large-push-3 medium-8 medium-push-2 small-1 small-push-5 columns title"><a href="index.php"><i class="icon-code"></i> <div class="hide-for-small">Code, Manage, Go!</div></a></div>
             </div>
             
             <div class="row hide-for-small">
