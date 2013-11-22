@@ -1,7 +1,7 @@
 
         
         <footer class="row">
-                <div class="small-12 columns copyright">Copyright Maia "Cat" McGuinness 2013</div>
+                 <div class="large-10 large-push-1 small-12 columns copyright">Copyright Maia "Cat" McGuinness 2013</div>
         </footer>  
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

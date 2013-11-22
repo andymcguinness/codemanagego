@@ -22,13 +22,8 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         
-        <header class="row">
-            <div class="large-10 large-uncentered small-6 small-centered columns">
-                <a href="index.php">
-                    <div class="row">
-                        <div class="large-1 small-12 columns"><div id="hexaheader" class="logo">!</div></div>
-                        <div class="large-11 columns hide-for-small"><div class="title">Code, Manage, Go!</div></div>
-                    </div>
-                </a>
+         <header class="row general-header">
+            <div class="row">
+                <div class="large-12 large-uncentered medium-8 medium-push-2 small-1 small-push-5 columns title"><a href="http://localhost/lis4368/index.php"><i class="icon-code"></i> <div class="hide-for-small">Code, Manage, Go!</div></a></div>
             </div>
         </header>

@@ -4,20 +4,17 @@ require_once('../models/task.class.php');
 require_once('../models/tasklist.class.php');
 require_once('../db/TaskMapper.php');
 
-// Creating a task list
-$list1 = new TaskList('Code, Manage, Go! Overall To-Do');
-
 // Connecting to the database
 $mapper = new TaskMapper();
 // Getting an overall task list
 $tasks = $mapper->retrieveTasks();
 ?>
 
-        <div class="row">
+        <div class="list-page row">
             <?php require_once('../sidebar-second-level.php'); ?>
             
             <div class="list-page-content large-8 small-12 columns">
-                <h3 class="list-page-header"><?php echo $list1->__get(title); ?></h3>
+                <h3 class="list-page-header"><i class="icon-signup"></i> Code, Manage, Go! Overall To-Do</h3>
                 
                 <?php
                     
@@ -25,12 +22,8 @@ $tasks = $mapper->retrieveTasks();
                     
                     foreach ($tasks as $task) {
                         echo '<div class="checklist">';
-                        echo '    <form class="custom">';
-                        echo '        <label for="checkbox' . $i .'">';
-                        echo '             <input type="checkbox" id="checkbox' . $i . '" style="display: none;">';
-                        echo '             <span class="custom checkbox"></span> ' . $task->__get(tsk_name);
-                        echo '        </label>';
-                        echo '    </form>';
+                        echo '   <input type="checkbox" id="checkbox' . $i . '">';
+                        echo '   <label for="checkbox' . $i .'">' . $task->__get(tsk_name) . '</label>';
                         echo '</div>';
                         
                         $i++; // increment

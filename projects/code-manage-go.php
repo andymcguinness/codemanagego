@@ -1,39 +1,35 @@
 <?php require_once('../header-second-level.php'); ?>
 
-        <div class="row">
+        <div class="project-page row">
             <?php require_once('../sidebar-second-level.php'); ?>
             <div class="project-main large-8 small-12 columns">
                 <section class="project-content">
                     <!-- Project Info -->
-                    <h3 class="project-header">Code, Manage, Go!</h3>
-                    <ul class="projects">
-                        <li>Content:
+                    <h3 class="project-header"><i class="icon-briefcase"></i> Code, Manage, Go!</h3>
                             <ul class="project-content">
-                                <li>Tasks</li>
+                                <li><i class="icon-signup"></i> Tasks</li>
                                     <ul class="project-sub-content">
-                                        <li>Implement fonts</li>
-                                        <li>Implment functionality</li>
+                                        <li><i class="icon-checkmark"></i> Implement fonts</li>
+                                        <li><i class="icon-checkmark"></i> Implment functionality</li>
                                     </ul>
-                                <li>Files</li>
+                                <li><i class="icon-library"></i> Files</li>
                                     <ul class="project-sub-content">
-                                        <li>header.php</li>
-                                        <li>footer.php</li>
-                                        <li>sidebar.php</li>
-                                        <li>index.php</li>
-                                        <li>profile.php</li>
-                                        <li>upload.php</li>
-                                        <li>files.php</li>
-                                        <li>lists.php</li>
-                                        <li>lists/list-name.php</li>
-                                        <li>main.css</li>
+                                        <li><i class="icon-copy"></i> header.php</li>
+                                        <li><i class="icon-copy"></i> footer.php</li>
+                                        <li><i class="icon-copy"></i> sidebar.php</li>
+                                        <li><i class="icon-copy"></i> index.php</li>
+                                        <li><i class="icon-copy"></i> profile.php</li>
+                                        <li><i class="icon-copy"></i> upload.php</li>
+                                        <li><i class="icon-copy"></i> files.php</li>
+                                        <li><i class="icon-copy"></i> lists.php</li>
+                                        <li><i class="icon-copy"></i> lists/list-name.php</li>
+                                        <li><i class="icon-copy"></i> main.css</li>
                                     </ul>
-                                <li>Members</li>
+                                <li><i class="icon-users"></i> Members</li>
                                     <ul class="project-sub-content">
-                                        <li><a href="../profile.php">Cat McGuinness</a></li>
+                                        <li><a href="../profile.php"><i class="icon-user"></i> Cat McGuinness</a></li>
                                     </ul>
                             </ul>
-                        </li>
-                    </ul>
                 </section>
             </div>
         </div>

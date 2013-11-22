@@ -1,21 +1,25 @@
 <?php require_once('header-index.php'); ?>
         
         <div class="row">
-            <div class="small-10 small-centered columns intro">
-                <h1>Hello, and welcome to my site!</h1>
+            <div class="large-11 small-10 small-centered columns intro">
+                <div class="main-header">
+                    <h1>Code, Manage, Go! Features</h1>
+                </div>
                 
-                <h4>Did you notice the signin button changed? It's now a signup button. Cool, right? Click it and see where it takes you, friend!</h4>
-                    
-                <p>This is the index page for my fantabulous website, called Code, Manage, Go! Feel free to have a look at the following user interfaces:</p>
+                <div class="main-content">
+                    <p>Code, Manage, Go! is like task management on steroids. It allows you to combine your two favorite things--git and task management--into one neat app. Other apps have features that allow you to address bugs with commits; I think that's a great idea, and wanted to extend that to the process of <em>building</em> apps and projects, not just <em>supporting</em> them.</p>
                 
-                <div class="row">
-                    <ul class="pages small-12 small-centered columns">
-                        <li><a class="cmg-btn-large" href="profile.php">Profile Page</a></li>
-                        <li><a class="cmg-btn-large" href="upload.php">Upload Page</a></li>
-                        <li><a class="cmg-btn-large" href="files.php">Files Page</a></li>
-                        <li><a class="cmg-btn-large" href="lists">Lists Page</a></li>
-                        <li><a class="cmg-btn-large" href="lists/code-manage-go-overall-to-do.php">Example List Page</a></li>
+                    <p>Some of Code, Manage, Go!'s great features include:</p>
+                
+                    <ul class="features-list">
+                        <li><a href="profile.php">An intuitive profile page</a></li>
+                        <li><a href="upload.php">The ability to upload files to your projects</a></li>
+                        <li><a href="files.php">The ability to review all files associated with your projects</a></li>
+                        <li><a href="lists/index.php">To-do lists, naturally</a></li>
+                        <li><a href="lists/code-manage-go-overall-to-do.php">The ability to review to-do lists and mark tasks complete</a></li>
                     </ul>
+                    
+                    <p>These are among some of the great features this webapp currently offers. Sign up today to get the full experience!</p>
                 </div>
             </div>
         </div>

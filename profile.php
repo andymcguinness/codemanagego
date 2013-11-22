@@ -1,65 +1,28 @@
 <?php require_once('header.php'); ?>
 
-        <div class="row">
+        <div class="profile row">
             <?php require_once('sidebar.php'); ?>
             
             <div class="profile-main large-8 small-12 columns">
                 <section class="profile-content">
+                    <h3><i class="icon-signup"></i> Cat's Tasks</h3>
                     
-                    <!-- Teams -->
-                    <h3 class="team-header">Your Teams</h3>
-                    <ul class="teams">
-                        <li>Code, Manage, Go! Team</li>
-                        <li>Redesign Team</li>
-                        <li>Ad Club Team</li>
+                    <ul class="profile-tasks">
+                        <li><input id="task1" type="checkbox"><label for="task1">Update site logo</label><div class="task-project">Code, Manage, Go!</div></li>
+                        <li><input id="task2" type="checkbox"><label for="task2">Implement off-canvas navigation</label><div class="task-project">Code, Manage, Go!</div></li>
+                        <li><input id="task3" type="checkbox"><label for="task3">Implement new color scheme</label><div class="task-project">Responsive Give Theme</div></li>
                     </ul>
+                    <div class="profile-see-more"><a href="#">See more...</a></div>
                     
-                    <!-- Projects -->
-                    <h3 class="project-header">Your Projects</h3>
-                    <ul class="projects">
-                        <li>Code, Manage, Go!
-                            <ul class="project-content">
-                                <li>Tasks</li>
-                                    <ul class="project-sub-content">
-                                        <li>Implement fonts</li>
-                                        <li>Implment functionality</li>
-                                    </ul>
-                                <li>Files</li>
-                                    <ul class="project-sub-content">
-                                        <li>header.php</li>
-                                        <li>footer.php</li>
-                                        <li>sidebar.php</li>
-                                        <li>index.php</li>
-                                        <li>profile.php</li>
-                                        <li>upload.php</li>
-                                        <li>files.php</li>
-                                        <li>lists.php</li>
-                                        <li>lists/list-name.php</li>
-                                        <li>main.css</li>
-                                    </ul>
-                                <li>Members</li>
-                                    <ul class="project-sub-content">
-                                        <li>Cat McGuinness</li>
-                                    </ul>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h3><i class="icon-newspaper"></i> Recent Activity</h3>
                     
-                    <!-- Tasks -->
-                    <h3 class="task-header">Your Tasks</h3>
-                    <ul class="tasks">
-                        <li>Implement fonts</li>
-                        <li>Implement functionality</li>
+                    <ul class="recent-activity">
+                        <li><div class="activity-content">John <a href="#">made a commit</a> to <a href="#">Code, Manage, Go!</a>.</div><div class="activity-meta">Tuesday, January 3rd, 8:57am.</div></li>
+                        <li><div class="activity-content">Maria <a href="#">completed a task</a> in <a href="#">Ad Club Site</a>.</div><div class="activity-meta">Tuesday, January 3rd, 11:02am.</div></li>
+                        <li><div class="activity-content">Alex <a href="#">posted a comment</a> in <a href="#">Responsive Give Theme</a>.</div><div class="activity-meta">Tuesday, January 3rd, 11:02am.</div></li>
                     </ul>
+                    <div class="profile-see-more"><a href="#">See more...</a></div>
                     
-                    <!-- Files -->
-                    <h3 class="file-header">Your Files</h3>
-                    <ul class="files">
-                        <li>header.php</li>
-                        <li>footer.php</li>
-                        <li>sidebar.php</li>
-                        <li>main.css</li>
-                    </ul>
                 </section>
             </div>
         </div>

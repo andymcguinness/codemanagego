@@ -41,6 +41,21 @@ class UserMapper {
 		
 		return $users;
 	}
+	
+	public function checkCredentials($username, $password) {
+        
+		//connecting to the database
+		$conn = $this->databaseConnect();
+		
+		//preparing the query
+		$result = $conn->query("SELECT * FROM user WHERE usr_username = '$username' AND usr_password = '$password';");
+		
+		if ($result) {
+			return true;
+		} else {
+			return false;
+		}
+    }
 
 	protected function databaseConnect() {
 		$conn = new PDO('mysql:host=ispace-2013.cci.fsu.edu;dbname=mm09k_lis4368', 'mm09k', 'd2mwr0p1');
