@@ -12,7 +12,7 @@
                     <p>Some of Code, Manage, Go!'s great features include:</p>
                 
                     <ul class="features-list">
-                        <li><a href="profile.php">An intuitive profile page</a></li>
+                        <li><a href="img/Code-Manage-Go!-Profile-Page.png">An intuitive profile page</a></li>
                         <li><a href="upload.php">The ability to upload files to your projects</a></li>
                         <li><a href="files.php">The ability to review all files associated with your projects</a></li>
                         <li><a href="lists/index.php">To-do lists, naturally</a></li>
