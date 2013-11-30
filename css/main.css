@@ -104,7 +104,7 @@ header ::selection { background: #fff; color: #000; }
 .row { max-width: 75em; }
 
 @media (min-width: 64.063em) {
-	.large-10 { left: 0% !important; } /* forced to override Foundation glitch */
+	.large-10 { left: 0 !important; } /* forced to override Foundation glitch */
 }
 
 /* ==== HEADER -- HOMEPAGE ==== */
@@ -135,11 +135,12 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 /* ==== HEADER -- GENERAL ==== */
 
 @media (min-width: 40.063em) {
-	.general-header { font-family: "Open Sans", Helvetica Nueue, sans-serif; left: 0%; }
+	.general-header { font-family: "Open Sans", Helvetica Nueue, sans-serif; left: 0; }
 	.general-header .title { padding: 1em; font-size: 2em; }
 	.general-header .title .icon-code { color: #fff; }
 	.sign-out-btn a { display: block; width: 100px; height: 100%; margin-top: 2em; padding: 0.5em; background: #e1e1e1; text-align: center; border-bottom: 2px solid #b7b7b7; }
 	.sign-out-btn a:hover { background: #b7b7b7; color: #000; }
+}
     
 @media (max-width: 40em) {
 	.general-header .title .icon-code { text-align: center; color: #fff; font-size: 3em; }
@@ -225,7 +226,7 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 /* ==== SIDEBAR ==== */
 
 .sidebar { background: #b7b7b7; font-family: "Open Sans", Helvetica Nueue, Helvetica, sans-serif; }
-.sidebar .column, .sidebar .colums { padding: 0; }
+.sidebar .column, .sidebar .columns { padding: 0; }
 
 .sidebar .profile-img { height: 80px; width: 80px; border: 5px solid #00bff3; padding: 0; margin: 1em 0 1em 1.55em; }
 .sidebar .user-info a { display: block; height: 100%; width: 100%; color: #fff; font-weight: 400; margin: 1.3em 0; padding: 0.5em 0 0.5em 0.5em; }
