@@ -104,7 +104,7 @@ header ::selection { background: #fff; color: #000; }
 .row { max-width: 75em; }
 
 @media (min-width: 64.063em) {
-	.large-12 { left: 0% !important; } /* forced to override Foundation glitch */
+	.large-10 { left: 0% !important; } /* forced to override Foundation glitch */
 }
 
 /* ==== HEADER -- HOMEPAGE ==== */
@@ -140,9 +140,7 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 	.general-header .title .icon-code { color: #fff; }
 	.sign-out-btn a { display: block; width: 100px; height: 100%; margin-top: 2em; padding: 0.5em; background: #e1e1e1; text-align: center; border-bottom: 2px solid #b7b7b7; }
 	.sign-out-btn a:hover { background: #b7b7b7; color: #000; }
-
-}
-
+    
 @media (max-width: 40em) {
 	.general-header .title .icon-code { text-align: center; color: #fff; font-size: 3em; }
 	.general-header .title { padding: 0.5em; }
