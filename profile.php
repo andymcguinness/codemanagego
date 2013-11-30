@@ -1,4 +1,11 @@
-<?php require_once('header.php'); ?>
+<?php
+ session_start();
+
+if ( ! isset($_SESSION['is_logged_in'])) {
+    header("Location: sign-in.php");
+}
+
+require_once('header.php'); ?>
 
         <div class="profile row">
             <?php require_once('sidebar.php'); ?>

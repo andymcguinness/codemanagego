@@ -1,8 +1,10 @@
 <?php
-require_once('header.php');
 require_once('functions.php');
 include_once('models/user.class.php');
 require_once('db/UserMapper.php');
+
+// Error array
+$errors=array();
 
 // Session init
 session_start();
@@ -15,16 +17,23 @@ if (count($_POST) > 0) {
 	
 	if($result == true) {
 		$_SESSION['is_logged_in'] = true;
-        header("Location: http://localhost/lis4368/profile.php");
+		header("Location: profile.php");
 	} else {
-		echo "Username or password entered incorrectly. Please try again.";
+		$errors[] =  "Username or password entered incorrectly. Please try again.";
 	}
 }
-?>
 
+require_once('header.php');
+?>
         <div class="row">
             <div class="small-10 small-centered columns signin">
                 <h1>Sign in to access your account.</h1>
+		
+		<?php
+			foreach ($errors as $error) {
+				echo '<div class="error">' . $error . '</div>';
+			}
+		?>
                 
                 <form action="sign-in.php" method="post">
 					
@@ -49,6 +58,4 @@ if (count($_POST) > 0) {
             </div>
         </div>
         
-<?php
-
-require_once('footer.php'); ?>
+<?php require_once('footer.php'); ?>

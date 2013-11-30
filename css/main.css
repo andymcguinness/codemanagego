@@ -138,6 +138,9 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 	.general-header { font-family: "Open Sans", Helvetica Nueue, sans-serif; left: 0%; }
 	.general-header .title { padding: 1em; font-size: 2em; }
 	.general-header .title .icon-code { color: #fff; }
+	.sign-out-btn a { display: block; width: 100px; height: 100%; margin-top: 2em; padding: 0.5em; background: #e1e1e1; text-align: center; border-bottom: 2px solid #b7b7b7; }
+	.sign-out-btn a:hover { background: #b7b7b7; color: #000; }
+
 }
 
 @media (max-width: 40em) {
@@ -214,6 +217,11 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 .upload.row { max-width: none; }
 .upload input[type="text"] { margin-top: 0.5em; }
 .upload .button { background: #00bff3; border-radius: 5px; }
+
+
+/* ==== CONTENT -- SIGN-IN PAGE ==== */
+
+.error { color: #f00; font-weight: bold; margin-bottom: 1em; }
 
 
 /* ==== SIDEBAR ==== */

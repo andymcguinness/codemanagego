@@ -47,10 +47,11 @@ class UserMapper {
 		//connecting to the database
 		$conn = $this->databaseConnect();
 		
-		//preparing the query
-		$result = $conn->query("SELECT * FROM user WHERE usr_username = '$username' AND usr_password = '$password';");
+		//query
+		$query = "SELECT * FROM user WHERE usr_username = '$username' and usr_password = '$password';";
+		$result = $conn->query($query);
 		
-		if ($result) {
+		if ($result->rowCount() == 1) {
 			return true;
 		} else {
 			return false;
