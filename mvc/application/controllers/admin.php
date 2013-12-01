@@ -11,17 +11,21 @@ class Admin extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('header-homepage');
+        $this->load->view('includes/header-homepage');
         $this->load->view('homepage');
-        $this->load->view('footer');
+        $this->load->view('includes/footer');
     }
 
     public function signup() {
         // The signup form/logic will go here
+        $this->load->view('includes/header-admin');
+        $this->load->view('includes/footer');
     }
 
     public function login() {
         // The login form/logic will go here
+        $this->load->view('includes/header-admin');
+        $this->load->view('includes/footer');
     }
 
     public function logout() {
