@@ -15,8 +15,6 @@ class Users extends CI_Controller {
         $this->load->view('userlist', $results);
     }
 
-
-
 }
 
 /* End of file users.php */
