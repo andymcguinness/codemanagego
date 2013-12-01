@@ -1,0 +1,249 @@
+/*
+Project Name: Code, Manage, Go!
+Stylesheet: Main.css
+Version: 2.0
+Author: Maia M. McGuinness
+Framework: Foundation 5 from ZURB
+*/
+
+/* ==== FONTS ==== */
+
+@import url("http://fonts.googleapis.com/css?family=Arvo:400,800");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+
+@font-face {
+	font-family: 'menu-font';
+	src:url('fonts/menu-font.eot');
+	src:url('fonts/menu-font.eot?#iefix') format('embedded-opentype'),
+		url('fonts/menu-font.ttf') format('truetype'),
+		url('fonts/menu-font.woff') format('woff'),
+		url('fonts/menu-font.svg#menu-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'menu-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-code:before {
+	content: "\e600";
+}
+.icon-menu:before {
+	content: "\e601";
+}
+.icon-newspaper:before {
+	content: "\e602";
+}
+.icon-drawer:before {
+	content: "\e603";
+}
+.icon-signup:before {
+	content: "\e604";
+}
+.icon-folder:before {
+	content: "\e605";
+}
+.icon-library:before {
+	content: "\e606";
+}
+.icon-copy:before {
+	content: "\e607";
+}
+.icon-list:before {
+	content: "\e608";
+}
+.icon-key:before {
+	content: "\e609";
+}
+.icon-upload:before {
+	content: "\e60a";
+}
+.icon-plus:before {
+	content: "\e60b";
+}
+.icon-arrow-right:before {
+	content: "\e60c";
+}
+.icon-checkmark:before {
+	content: "\e60d";
+}
+.icon-checkmark2:before {
+	content: "\e60e";
+}
+.icon-briefcase:before {
+	content: "\e60f";
+}
+.icon-users:before {
+	content: "\e610";
+}
+.icon-user:before {
+	content: "\e611";
+}
+
+
+
+/* ==== GLOBAL ==== */
+
+a { color: #00bff3; }
+a:hover { color: #000; }
+
+::selection { background: #00bff3; color: #fff; }
+header ::selection { background: #fff; color: #000; }
+
+.row { max-width: 75em; }
+
+@media (min-width: 64.063em) {
+	.large-10 { left: 0 !important; } /* forced to override Foundation glitch */
+}
+
+/* ==== HEADER -- HOMEPAGE ==== */
+
+header { background: #00bff3; color: #fff; }
+header.row { max-width: none; overflow-x: hidden; }
+
+header a { color: #000; }
+header a:hover { color: #fff; }
+
+header .sign-in, header .sign-up { text-align: center; padding-bottom: 0.75em; }
+header .sign-in a, header .sign-up a { display: block; height: 100%; width: 100%; padding: 0.5em; background: #e1e1e1; border-bottom: 3px solid #b7b7b7; }
+header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #fff; }
+
+@media (min-width: 40.063em) {
+	.homepage { font-family: "Open Sans", Helvetica Nueue, sans-serif; }
+	.homepage .title { margin-top: 0.5em; font-size: 3em; text-align: center; }
+	.homepage .title .icon-code { color: #fff; }
+	.homepage .details p { padding: 1.5em 0 0.5em 0; font-size: 1.2em; color: #fff; text-align: center; font-weight: 300;  }
+}
+
+@media (max-width: 40em) {
+	.homepage .title .icon-code { text-align: center; color: #fff; font-size: 3em; }
+	.homepage .title { padding: 0.5em; }
+}
+
+
+/* ==== HEADER -- GENERAL ==== */
+
+@media (min-width: 40.063em) {
+	.general-header { font-family: "Open Sans", Helvetica Nueue, sans-serif; left: 0; }
+	.general-header .title { padding: 1em; font-size: 2em; }
+	.general-header .title .icon-code { color: #fff; }
+	.sign-out-btn a { display: block; width: 100px; height: 100%; margin-top: 2em; padding: 0.5em; background: #e1e1e1; text-align: center; border-bottom: 2px solid #b7b7b7; }
+	.sign-out-btn a:hover { background: #b7b7b7; color: #000; }
+}
+    
+@media (max-width: 40em) {
+	.general-header .title .icon-code { text-align: center; color: #fff; font-size: 3em; }
+	.general-header .title { padding: 0.5em; }
+}
+
+/* ==== CONTENT -- PROFILE PAGE ==== */
+
+.profile.row { max-width: none; }
+
+.profile-main ul { list-style-type: none; margin-left: 0; margin-bottom: 0.5em; }
+.profile-main li { border-bottom: 1px solid #00bff3; }
+.profile-main li:first-child { border-top: 1px solid #00bff3; }
+.profile-main li input { margin: 0 0 0.5em 1.1rem; }
+.profile-main li label { font-size: 1.2em; }
+.profile-main li .task-project { color: #b7b7b7; margin: 0.4em 1.1rem 0 0; float: right; }
+
+.profile-main .profile-see-more { margin-bottom: 1.1em; }
+.profile-main li .task-project, .profile-main .activity-meta { font-size: 0.9em; }
+
+.profile-main .recent-activity .activity-content { margin: 0.25em 0 0.25em 1.1rem; display: inline-block; }
+.profile-main .activity-meta { display: inline-block; color: #b7b7b7; float: right; margin: 0.4em 1.1rem 0 0; }
+
+
+/* ==== CONTENT -- LISTS PAGE ==== */
+
+.lists.row { max-width: none; }
+
+.lists .icon-list { font-size: 0.9em; }
+.lists ul { margin-left: 0; }
+
+.lists .lists { list-style-type: none; font-size: 1.2em; }
+.lists .lists li a { display: block; width: 100%; height: 100%; margin: 0.25em 0 0.25em 0; padding-left: 1em; }
+.lists .lists li i { color: #000; }
+
+
+/* ==== CONTENT -- INDIVIDUAL LIST PAGE ==== */
+
+.list-page.row { max-width: none; }
+
+.list-page .checklist input { margin: 0.5em 0 0.5em 1.1rem; }
+.list-page .checklist:first-of-type { border-top: 1px solid #00bff3; }
+.list-page .checklist { border-bottom: 1px solid #00bff3; }
+.list-page .checklist label { font-size: 1.2em; }
+
+
+/* ==== CONTENT -- PROJECTS PAGE ==== */
+
+.projects.row { max-width: none; }
+
+.projects .projects i { color: #000; }
+.projects .projects { list-style-type: none; font-size: 1.2em; }
+
+
+/* ==== CONTENT -- INDIVIDUAL PROJECT PAGE ==== */
+
+.project-page.row { max-width: none; }
+
+.project-page .project-content { list-style-type: none; font-size: 1.2em; }
+.project-page .project-content ul { list-style-type: none; }
+.project-page .project-content li a i { color: #000; }
+
+
+/* ==== CONTENT -- FILES PAGE ==== */
+
+.files.row { max-width: none; }
+.files .files { list-style-type: none; }
+.files .files li a i {color: #000; }
+
+
+/* ==== CONTENT -- UPLOAD PAGE ==== */
+
+.upload.row { max-width: none; }
+.upload input[type="text"] { margin-top: 0.5em; }
+.upload .button { background: #00bff3; border-radius: 5px; }
+
+
+/* ==== CONTENT -- SIGN-IN PAGE ==== */
+
+.error { color: #f00; font-weight: bold; margin-bottom: 1em; }
+
+
+/* ==== SIDEBAR ==== */
+
+.sidebar { background: #b7b7b7; font-family: "Open Sans", Helvetica Nueue, Helvetica, sans-serif; }
+.sidebar .column, .sidebar .columns { padding: 0; }
+
+.sidebar .profile-img { height: 80px; width: 80px; border: 5px solid #00bff3; padding: 0; margin: 1em 0 1em 1.55em; }
+.sidebar .user-info a { display: block; height: 100%; width: 100%; color: #fff; font-weight: 400; margin: 1.3em 0; padding: 0.5em 0 0.5em 0.5em; }
+.sidebar .user-info .username a { margin-bottom: 0; }
+.sidebar .user-info a:hover { background: #e1e1e1; color: #000; }
+.sidebar .user-info .inbox a { margin-top: 0; }
+
+.sidebar .sidebar-content ul { list-style-type: none; margin-left: 0; }
+.sidebar .sidebar-content .title { font-size: 1.2em; margin-bottom: 1em; }
+.sidebar .sidebar-content .title a { color: #000; display: block; width: 100%; height: 100%; }
+.sidebar .sidebar-content .title > a { margin-bottom: 0.5em; }
+.sidebar .sidebar-content .title li { background: #e1e1e1; border-bottom: 1px solid #b7b7b7; }
+.sidebar .sidebar-content .title li a { padding-left: 1.1em; }
+.sidebar .sidebar-content .title li a:hover { background: #fff; color: #000; }
+
+
+/* ==== FOOTER ==== */
+
+footer.row { background: #e1e1e1; max-width: none; }
+.copyright { padding: 1em 1em 1em 0; }

@@ -1,14 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Admin extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
+
+        // Loading the user model for login/signup logic
         $this->load->model('user_model');
+        $this->load->helper( array('html', 'url') );
     }
 
     public function index() {
-        // Loads the homepage
+        $this->load->view('header-homepage');
+        $this->load->view('homepage');
+        $this->load->view('footer');
     }
 
     public function signup() {
@@ -25,5 +30,5 @@ class Auth extends CI_Controller {
 
 }
 
-/* End of file auth.php */
-/* Location: ./application/controllers/auth.php */
+/* End of file admin.php */
+/* Location: ./application/controllers/admin.php */
