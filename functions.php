@@ -6,7 +6,7 @@ function allowedCharactersTest($str) {
     
     $allowed = "abcdefghijklmnopqrstuvwxyz1234567890- '@.";
     
-    for($i - 0; $i < strlen($modifiedStr); $i++) {
+    for($i = 0; $i < strlen($modifiedStr); $i++) {
         
         $character = $modifiedStr{$i};
         $isValid = (strpos($allowed, $character) !== false);
