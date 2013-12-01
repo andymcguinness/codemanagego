@@ -38,4 +38,10 @@ class User_model extends CI_Model {
         $query = $this->db->query($sql);
         return $query->result();
     }
+
+    public function checkCredentials($un, $pw) {
+        $sql = "SELECT * from user WHERE usr_username = '$un' and usr_password = '$pw';";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
 }

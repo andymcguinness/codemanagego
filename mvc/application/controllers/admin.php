@@ -180,8 +180,28 @@ class Admin extends CI_Controller {
     /*** END SIGNUP CALLBACKS ***/
 
     public function login() {
-        // The login form/logic will go here
         $this->load->view('includes/header-admin');
+
+        if ($this->input->post()) {
+
+            $username = $this->input->post('usr_username');
+            $password = $this->input->post('usr_password');
+
+            $result = $this->user_model->checkCredentials($username, $password);
+
+            if ($result) {
+                $this->load->view('formsuccess');
+            } else {
+                $data = array(
+                    'error' => 'Username or password entered incorrectly. Please try again.'
+                );
+                $this->load->view('login', $data);
+            }
+        }
+        else {
+            $this->load->view('login');
+        }
+
         $this->load->view('includes/footer');
     }
 
