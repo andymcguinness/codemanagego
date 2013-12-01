@@ -12,6 +12,17 @@ class User_model extends CI_Model {
 
     public function createUser() {
 
+        // Pulling the variables from the POST data
+        $data = array(
+            'usr_username' => $this->input->post('usr_username'),
+            'usr_lastname' => $this->input->post('usr_lastname'),
+            'usr_firstname' => $this->input->post('usr_firstname'),
+            'usr_email' => $this->input->post('usr_email'),
+            'usr_password' => $this->input->post('usr_password')
+        );
+
+        // Inserting the data
+        $this->db->insert('user', $data);
     }
 
     public function retrieveUser($id) {

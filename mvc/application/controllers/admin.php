@@ -37,6 +37,7 @@ class Admin extends CI_Controller {
         }
         else {
             $this->load->view('formsuccess');
+            $this->user_model->createUser();
         }
 
         $this->load->view('includes/footer');
