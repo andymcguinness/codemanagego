@@ -41,9 +41,10 @@
 $route['default_controller'] = 'admin';
 $route['404_override'] = '';
 
-$route['signup'] = 'admin/signup';
+$route['register'] = 'admin/register';
 $route['login'] = 'admin/login';
 $route['dashboard'] = 'users/dashboard';
+$route['logout'] = 'admin/logout';
 
 
 /* End of file routes.php */

@@ -18,7 +18,7 @@ class Admin extends CI_Controller {
         $this->load->view('includes/footer');
     }
 
-    public function signup() {
+    public function register() {
         // Loading the form handling/validation library
         $this->load->library('form_validation');
 
@@ -33,17 +33,24 @@ class Admin extends CI_Controller {
 
         // Testing for any form validation, displaying page content based on that
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('signup');
+            $this->load->view('register');
         }
         else {
-            $this->load->view('formsuccess');
+            // First things first...
             $this->user_model->createUser();
+
+            // Log in now!
+            $data = array(
+                'message' => 'Registration complete! Login below.'
+            );
+
+            $this->load->view('login', $data);
         }
 
         $this->load->view('includes/footer');
     }
 
-    /*** BEGIN SIGNUP CALLBACKS ***/
+    /*** BEGIN REGISTER CALLBACKS ***/
 
     public function name_check($str) {
 
@@ -177,7 +184,7 @@ class Admin extends CI_Controller {
         return true;
     }
 
-    /*** END SIGNUP CALLBACKS ***/
+    /*** END REGISTER CALLBACKS ***/
 
     public function login() {
         $logged_in = $this->session->userdata('is_logged_in');
@@ -195,7 +202,7 @@ class Admin extends CI_Controller {
 
                 if ($result) {
                     $this->session->set_userdata('is_logged_in', 'true');
-                    $this->load->view('formsuccess');
+                    redirect('dashboard');
                 } else {
                     $data = array(
                         'error' => 'Username or password entered incorrectly. Please try again.'
@@ -214,9 +221,15 @@ class Admin extends CI_Controller {
     }
 
     public function logout() {
-        // The logout logic
-    }
+        $logged_in = $this->session->userdata('is_logged_in');
 
+        if ($logged_in == true) {
+            $this->session->unset_userdata('is_logged_in');
+            redirect('login');
+        } else {
+            redirect('login');
+        }
+    }
 }
 
 /* End of file admin.php */

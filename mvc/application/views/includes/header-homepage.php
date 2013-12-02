@@ -34,7 +34,7 @@
     </div>
 
     <div class="row">
-        <div class="large-2 large-push-4 medium-3 medium-push-3 small-4 small-push-2 columns"><div class="sign-up"><a href="<?php echo base_url(); ?>index.php/signup">Sign Up</a></div></div>
-        <div class="large-2 large-pull-4 medium-3 medium-pull-3 small-4 small-pull-2 columns"><div class="sign-in"><a href="">Sign In</a></div></div>
+        <div class="large-2 large-push-4 medium-3 medium-push-3 small-4 small-push-2 columns"><div class="sign-up"><a href="<?php echo base_url(); ?>index.php/register">Sign Up</a></div></div>
+        <div class="large-2 large-pull-4 medium-3 medium-pull-3 small-4 small-pull-2 columns"><div class="sign-in"><a href="<?php echo base_url(); ?>index.php/login">Sign In</a></div></div>
     </div>
 </header>

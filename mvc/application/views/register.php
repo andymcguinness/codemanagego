@@ -4,7 +4,7 @@
 
         <?php echo validation_errors(); ?>
 
-        <?php echo form_open('signup') ?>
+        <?php echo form_open('register') ?>
             <div class="row">
                 <div class="small-4 push-2 columns">
                     <label>First Name: <input name="usr_firstname" type="text" value="<?php echo set_value('usr_firstname'); ?>" /></label>

@@ -6,6 +6,10 @@
             echo '<div class="error">' . $error . '</div>';
         } ?>
 
+        <?php if (isset($message)) {
+            echo '<div class="message">' . $message . '</div>';
+        } ?>
+
         <?php echo form_open('login') ?>
 
             <div class="row">
