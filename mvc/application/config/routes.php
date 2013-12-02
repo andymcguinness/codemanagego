@@ -43,6 +43,7 @@ $route['404_override'] = '';
 
 $route['signup'] = 'admin/signup';
 $route['login'] = 'admin/login';
+$route['dashboard'] = 'users/dashboard';
 
 
 /* End of file routes.php */

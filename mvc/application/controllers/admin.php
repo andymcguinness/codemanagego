@@ -180,29 +180,37 @@ class Admin extends CI_Controller {
     /*** END SIGNUP CALLBACKS ***/
 
     public function login() {
-        $this->load->view('includes/header-admin');
+        $logged_in = $this->session->userdata('is_logged_in');
 
-        if ($this->input->post()) {
+        if ($logged_in == false) {
 
-            $username = $this->input->post('usr_username');
-            $password = $this->input->post('usr_password');
+            $this->load->view('includes/header-admin');
 
-            $result = $this->user_model->checkCredentials($username, $password);
+            if ($this->input->post()) {
 
-            if ($result) {
-                $this->load->view('formsuccess');
-            } else {
-                $data = array(
-                    'error' => 'Username or password entered incorrectly. Please try again.'
-                );
-                $this->load->view('login', $data);
+                $username = $this->input->post('usr_username');
+                $password = $this->input->post('usr_password');
+
+                $result = $this->user_model->checkCredentials($username, $password);
+
+                if ($result) {
+                    $this->session->set_userdata('is_logged_in', 'true');
+                    $this->load->view('formsuccess');
+                } else {
+                    $data = array(
+                        'error' => 'Username or password entered incorrectly. Please try again.'
+                    );
+                    $this->load->view('login', $data);
+                }
             }
-        }
-        else {
-            $this->load->view('login');
-        }
+            else {
+                $this->load->view('login');
+            }
 
-        $this->load->view('includes/footer');
+            $this->load->view('includes/footer');
+        } else{
+            redirect('dashboard');
+        }
     }
 
     public function logout() {
