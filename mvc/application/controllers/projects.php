@@ -6,6 +6,8 @@ class Projects extends CI_Controller {
         parent::__construct();
 
         $this->load->model('project_model');
+        $this->load->model('list_model');
+        $this->load->model('task_model');
 
         // Loading some useful extras
         $this->load->helper( array('html', 'url', 'form') );
@@ -38,8 +40,22 @@ class Projects extends CI_Controller {
             $this->load->view('includes/header');
             $this->load->view('includes/sidebar');
 
-            $project_info = $this->project_model->retrieveProject($slug);
+            $project_info = $this->project_model->retrieveProjectInfo($slug);
 
+            if ($project_info == false) {
+                show_404('project');
+            } else {
+                $list_info = $this->list_model->retrieveListByProject($project_info[0]["pjt_id"]);
+                $tasks[] = $this->task_model->retrieveTasksByList($list_info[0]["lst_id"]);
+            }
+
+            $data = array( // Putting it all together now
+                'project_info' => $project_info,
+                'list_info' => $list_info,
+                'tasks' => $tasks
+            );
+
+            $this->load->view('project_info', $data);
 
             $this->load->view('includes/footer');
         }

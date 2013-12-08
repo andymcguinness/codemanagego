@@ -10,23 +10,19 @@ class Task_model extends CI_Model {
         $this->load->database($dsn);
     }
 
-    public function createTask() {
-
-        // Pulling the variables from the POST data
-        $data = array(
-
-        );
-
-        // Inserting the data
-        $this->db->insert('task', $data);
-    }
-
     public function retrieveTask($name) {
 
     }
 
-    public function updateTask($name /* etc.*/) {
+    public function retrieveTasksByList($list_id) {
+        $sql = "SELECT * from task WHERE lst_id = '$list_id';";
+        $query = $this->db->query($sql);
 
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        } else {
+            return false;
+        }
     }
 
 }

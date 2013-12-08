@@ -10,12 +10,12 @@ class Project_model extends CI_Model {
         $this->load->database($dsn);
     }
 
-    public function retrieveProject($slug) {
+    public function retrieveProjectInfo($slug) {
         $sql = "SELECT * from project WHERE pjt_slug = '$slug';";
         $query = $this->db->query($sql);
 
         if ($query->num_rows() > 0) {
-            return $query->result();
+            return $query->result_array();
         } else {
             return false;
         }
@@ -24,15 +24,6 @@ class Project_model extends CI_Model {
     public function retrieveProjects() {
         $sql = "SELECT * from project;";
         $query = $this->db->query($sql);
-
-        foreach ($query->result() as $row)
-        {
-            var_dump($row);
-        }
-    }
-
-    public function retrieveProjectInfo() {
-
     }
 
 }
