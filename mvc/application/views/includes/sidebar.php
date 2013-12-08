@@ -4,7 +4,7 @@
             <img class="small-4 columns profile-img" src="http://placehold.it/60x60" />
             <div class="small-8 columns user-info">
                 <div class="row">
-                    <div class="small-12 columns username"><strong><a href="">Cat McGuinness</a></strong></div>
+                    <div class="small-12 columns username"><strong><a href="<?php echo base_url(); ?>index.php/dashboard">Cat McGuinness</a></strong></div>
                     <div class="small-12 columns inbox"><a href="#"><i class="icon-drawer"></i> Inbox</a></div>
                 </div>
             </div>
@@ -14,8 +14,8 @@
             <ul>
                 <li class="title"><a href=""><i class="icon-folder"></i> Projects</a>
                     <ul>
-                        <li><a href="#">Code, Manage, Go!</a></li>
-                        <li><a href="#">Ad Club Site</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/projects/project/code-manage-go">Code, Manage, Go!</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/projects/project/ad-club-site">Ad Club Site</a></li>
                         <li><a href="#">Responsive Give Theme</a></li>
                     </ul>
                 </li>
