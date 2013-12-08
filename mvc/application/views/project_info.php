@@ -17,8 +17,10 @@
                 echo '<p>No matching tasks found.</p>';
             } else {
                 echo '<ul class="list-tasks">';
+
+                $i = 1;
                 foreach ($tasks[0] as $task) {
-                    echo '<li>' . $task["tsk_name"] . '</li>';
+                    echo '<li><input id="task' . $i . '" type="checkbox"><label for="task' . $i . '">' . $task["tsk_name"] . '</label></li>';
                 }
                 echo '</ul>';
             }

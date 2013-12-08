@@ -223,6 +223,12 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 .error { color: #f00; font-weight: bold; margin-bottom: 1em; }
 
 
+/* === CONTENT -- PROJECT PAGE (MVC) === */
+
+.list-tasks { list-style-type: none; }
+.project-header { padding-bottom: 0.5em; font-weight: 400; }
+
+
 /* ==== SIDEBAR ==== */
 
 .sidebar { background: #b7b7b7; font-family: "Open Sans", Helvetica Nueue, Helvetica, sans-serif; }
