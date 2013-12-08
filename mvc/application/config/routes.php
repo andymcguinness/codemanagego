@@ -45,6 +45,7 @@ $route['register'] = 'admin/register';
 $route['login'] = 'admin/login';
 $route['dashboard'] = 'users/dashboard';
 $route['logout'] = 'admin/logout';
+$route['projects'] = 'projects';
 
 
 /* End of file routes.php */
