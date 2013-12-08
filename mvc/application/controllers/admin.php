@@ -90,7 +90,7 @@ class Admin extends CI_Controller {
         /*** ALLOWED CHARACTERS ***/
         $modifiedStr = strtolower($str);
 
-        $allowed = "abcdefghijklmnopqrstuvwxyz1234567890- '@.";
+        $allowed = "abcdefghijklmnopqrstuvwxyz1234567890- '@_.";
 
         for($i = 0; $i < strlen($modifiedStr); $i++) {
 
@@ -123,7 +123,7 @@ class Admin extends CI_Controller {
         /*** ALLOWED CHARACTERS ***/
         $modifiedStr = strtolower($str);
 
-        $allowed = "abcdefghijklmnopqrstuvwxyz1234567890- '@.";
+        $allowed = "abcdefghijklmnopqrstuvwxyz1234567890!#$%^&*()- '_@.";
 
         for($i = 0; $i < strlen($modifiedStr); $i++) {
 
@@ -156,7 +156,7 @@ class Admin extends CI_Controller {
         /*** ALLOWED CHARACTERS ***/
         $modifiedStr = strtolower($str);
 
-        $allowed = "abcdefghijklmnopqrstuvwxyz1234567890- '@.";
+        $allowed = "abcdefghijklmnopqrstuvwxyz1234567890- '_@.";
 
         for($i = 0; $i < strlen($modifiedStr); $i++) {
 

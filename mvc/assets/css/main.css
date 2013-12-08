@@ -228,8 +228,8 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 .sidebar { background: #b7b7b7; font-family: "Open Sans", Helvetica Nueue, Helvetica, sans-serif; }
 .sidebar .column, .sidebar .columns { padding: 0; }
 
-.sidebar .profile-img { height: 80px; width: 80px; border: 5px solid #00bff3; padding: 0; margin: 1em 0 1em 1.55em; }
-.sidebar .user-info a { display: block; height: 100%; width: 100%; color: #fff; font-weight: 400; margin: 1.3em 0; padding: 0.5em 0 0.5em 0.5em; }
+.sidebar .profile-img { height: 80px; max-width: 80px; border: 5px solid #00bff3; padding: 0; margin: 1em 0 1em 1em; }
+.sidebar .user-info a { display: block; height: 100%; width: 80%; color: #fff; font-weight: 400; margin: 1.3em 0 1.3em 1em; padding: 0.5em 0 0.5em 0.5em; }
 .sidebar .user-info .username a { margin-bottom: 0; }
 .sidebar .user-info a:hover { background: #e1e1e1; color: #000; }
 .sidebar .user-info .inbox a { margin-top: 0; }
