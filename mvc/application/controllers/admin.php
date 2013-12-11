@@ -202,6 +202,7 @@ class Admin extends CI_Controller {
 
                 if ($result) {
                     $this->session->set_userdata('is_logged_in', 'true');
+                    $this->session->set_userdata('username', $username);
                     redirect('dashboard');
                 } else {
                     $data = array(
