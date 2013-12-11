@@ -21,6 +21,7 @@
                 $i = 1;
                 foreach ($tasks[0] as $task) {
                     echo '<li><input id="task' . $i . '" type="checkbox"><label for="task' . $i . '">' . $task["tsk_name"] . '</label></li>';
+                    $i++;
                 }
                 echo '</ul>';
             }
