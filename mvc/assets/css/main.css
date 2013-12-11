@@ -97,8 +97,8 @@ Notes: I hate importants. However, with this framework, it's helpful to keep the
 /* ==== GLOBAL ==== */
 html { background: #f1f1f1; }
 
-a { color: #00ae5f; }
-a:hover { color: #000; }
+html a { color: #00ae5f; }
+html a:hover { color: #000; }
 
 ::selection { background: #00ae5f; color: #fff; }
 header ::selection { background: #fff; color: #000; }
@@ -152,7 +152,7 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
     
 @media (max-width: 40em) {
 	.general-header .title .icon-code { text-align: center; color: #fff; font-size: 3em; }
-	.general-header .title { padding: 0.5em; }
+	.general-header.title { padding: 0.5em; color: #000; }
 }
 
 
