@@ -4,6 +4,8 @@ Stylesheet: Main.css
 Version: 2.0
 Author: Maia M. McGuinness
 Framework: Foundation 5 from ZURB
+
+Notes: I hate importants. However, with this framework, it's helpful to keep the code clean.
 */
 
 /* ==== FONTS ==== */
@@ -93,11 +95,12 @@ Framework: Foundation 5 from ZURB
 
 
 /* ==== GLOBAL ==== */
+html { background: #f1f1f1; }
 
-a { color: #00bff3; }
+a { color: #00ae5f; }
 a:hover { color: #000; }
 
-::selection { background: #00bff3; color: #fff; }
+::selection { background: #00ae5f; color: #fff; }
 header ::selection { background: #fff; color: #000; }
 
 .row { max-width: 75em; }
@@ -106,9 +109,15 @@ header ::selection { background: #fff; color: #000; }
 	.large-10 { left: 0 !important; } /* forced to override Foundation glitch */
 }
 
+.error { color: #f00; font-weight: bold; margin-bottom: 1em; }
+
+input[type='file'] { width: auto !important; }
+button { background-color: #00ae5f !important; border: #00ae5f !important; }
+
+
 /* ==== HEADER -- HOMEPAGE ==== */
 
-header { background: #00bff3; color: #fff; }
+header { background: #00ae5f; color: #fff; }
 header.row { max-width: none; overflow-x: hidden; }
 
 header a { color: #000; }
@@ -146,109 +155,26 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 	.general-header .title { padding: 0.5em; }
 }
 
-/* ==== CONTENT -- PROFILE PAGE ==== */
 
-.profile.row { max-width: none; }
+/* === STRUCTURE === */
 
-.profile-main ul { list-style-type: none; margin-left: 0; margin-bottom: 0.5em; }
-.profile-main li { border-bottom: 1px solid #00bff3; }
-.profile-main li:first-child { border-top: 1px solid #00bff3; }
-.profile-main li input { margin: 0 0 0.5em 1.1rem; }
-.profile-main li label { font-size: 1.2em; }
-.profile-main li .task-project { color: #b7b7b7; margin: 0.4em 1.1rem 0 0; float: right; }
-
-.profile-main .profile-see-more { margin-bottom: 1.1em; }
-.profile-main li .task-project, .profile-main .activity-meta { font-size: 0.9em; }
-
-.profile-main .recent-activity .activity-content { margin: 0.25em 0 0.25em 1.1rem; display: inline-block; }
-.profile-main .activity-meta { display: inline-block; color: #b7b7b7; float: right; margin: 0.4em 1.1rem 0 0; }
+.full-width-wrapper { margin: 2.5%; background: #fff; width: 95% !important; } /* I hate importants, but it will keep the code clean. */
 
 
-/* ==== CONTENT -- LISTS PAGE ==== */
+/* === PAGE-SPECIFIC STYLES === */
 
-.lists.row { max-width: none; }
-
-.lists .icon-list { font-size: 0.9em; }
-.lists ul { margin-left: 0; }
-
-.lists .lists { list-style-type: none; font-size: 1.2em; }
-.lists .lists li a { display: block; width: 100%; height: 100%; margin: 0.25em 0 0.25em 0; padding-left: 1em; }
-.lists .lists li i { color: #000; }
-
-
-/* ==== CONTENT -- INDIVIDUAL LIST PAGE ==== */
-
-.list-page.row { max-width: none; }
-
-.list-page .checklist input { margin: 0.5em 0 0.5em 1.1rem; }
-.list-page .checklist:first-of-type { border-top: 1px solid #00bff3; }
-.list-page .checklist { border-bottom: 1px solid #00bff3; }
-.list-page .checklist label { font-size: 1.2em; }
-
-
-/* ==== CONTENT -- PROJECTS PAGE ==== */
-
-.projects.row { max-width: none; }
-
-.projects .projects i { color: #000; }
-.projects .projects { list-style-type: none; font-size: 1.2em; }
-
-
-/* ==== CONTENT -- INDIVIDUAL PROJECT PAGE ==== */
-
-.project-page.row { max-width: none; }
-
-.project-page .project-content { list-style-type: none; font-size: 1.2em; }
-.project-page .project-content ul { list-style-type: none; }
-.project-page .project-content li a i { color: #000; }
-
-
-/* ==== CONTENT -- FILES PAGE ==== */
-
-.files.row { max-width: none; }
-.files .files { list-style-type: none; }
-.files .files li a i {color: #000; }
-
-
-/* ==== CONTENT -- UPLOAD PAGE ==== */
-
-.upload.row { max-width: none; }
-.upload input[type="text"] { margin-top: 0.5em; }
-.upload .button { background: #00bff3; border-radius: 5px; }
-
-
-/* ==== CONTENT -- SIGN-IN PAGE ==== */
-
-.error { color: #f00; font-weight: bold; margin-bottom: 1em; }
-
-
-/* === CONTENT -- PROJECT PAGE (MVC) === */
+/* Project Page */
 
 .list-tasks { list-style-type: none; }
 .project-header { padding-bottom: 0.5em; font-weight: 400; }
 
+/* Upload Page */
 
-/* ==== SIDEBAR ==== */
-
-.sidebar { background: #b7b7b7; font-family: "Open Sans", Helvetica Nueue, Helvetica, sans-serif; }
-.sidebar .column, .sidebar .columns { padding: 0; }
-
-.sidebar .profile-img { height: 80px; max-width: 80px; border: 5px solid #00bff3; padding: 0; margin: 1em 0 1em 1em; }
-.sidebar .user-info a { display: block; height: 100%; width: 80%; color: #fff; font-weight: 400; margin: 1.3em 0 1.3em 1em; padding: 0.5em 0 0.5em 0.5em; }
-.sidebar .user-info .username a { margin-bottom: 0; }
-.sidebar .user-info a:hover { background: #e1e1e1; color: #000; }
-.sidebar .user-info .inbox a { margin-top: 0; }
-
-.sidebar .sidebar-content ul { list-style-type: none; margin-left: 0; }
-.sidebar .sidebar-content .title { font-size: 1.2em; margin-bottom: 1em; }
-.sidebar .sidebar-content .title a { color: #000; display: block; width: 100%; height: 100%; }
-.sidebar .sidebar-content .title > a { margin-bottom: 0.5em; }
-.sidebar .sidebar-content .title li { background: #e1e1e1; border-bottom: 1px solid #b7b7b7; }
-.sidebar .sidebar-content .title li a { padding-left: 1.1em; }
-.sidebar .sidebar-content .title li a:hover { background: #fff; color: #000; }
+.file-upload input[type='file'] { background: #f1f1f1; color: #00ae5f; padding: 0.5em; }
+.file-upload button { margin-left: 5em; }
 
 
 /* ==== FOOTER ==== */
 
-footer.row { background: #e1e1e1; max-width: none; }
+footer.row { background: #f1f1f1; max-width: none; }
 .copyright { padding: 1em 1em 1em 0; }
