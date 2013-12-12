@@ -38,60 +38,24 @@ Notes: I hate importants. However, with this framework, it's helpful to keep the
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-code:before {
-	content: "\e600";
-}
-.icon-menu:before {
-	content: "\e601";
-}
-.icon-newspaper:before {
-	content: "\e602";
-}
-.icon-drawer:before {
-	content: "\e603";
-}
-.icon-signup:before {
-	content: "\e604";
-}
-.icon-folder:before {
-	content: "\e605";
-}
-.icon-library:before {
-	content: "\e606";
-}
-.icon-copy:before {
-	content: "\e607";
-}
-.icon-list:before {
-	content: "\e608";
-}
-.icon-key:before {
-	content: "\e609";
-}
-.icon-upload:before {
-	content: "\e60a";
-}
-.icon-plus:before {
-	content: "\e60b";
-}
-.icon-arrow-right:before {
-	content: "\e60c";
-}
-.icon-checkmark:before {
-	content: "\e60d";
-}
-.icon-checkmark2:before {
-	content: "\e60e";
-}
-.icon-briefcase:before {
-	content: "\e60f";
-}
-.icon-users:before {
-	content: "\e610";
-}
-.icon-user:before {
-	content: "\e611";
-}
+.icon-code:before { content: "\e600"; }
+.icon-menu:before { content: "\e601"; }
+.icon-newspaper:before { content: "\e602"; }
+.icon-drawer:before { content: "\e603"; }
+.icon-signup:before { content: "\e604"; }
+.icon-folder:before { content: "\e605"; }
+.icon-library:before { content: "\e606"; }
+.icon-copy:before { content: "\e607"; }
+.icon-list:before { content: "\e608"; }
+.icon-key:before { content: "\e609"; }
+.icon-upload:before { content: "\e60a"; }
+.icon-plus:before { content: "\e60b"; }
+.icon-arrow-right:before { content: "\e60c"; }
+.icon-checkmark:before { content: "\e60d"; }
+.icon-checkmark2:before { content: "\e60e"; }
+.icon-briefcase:before { content: "\e60f"; }
+.icon-users:before { content: "\e610"; }
+.icon-user:before { content: "\e611"; }
 
 
 /* ==== GLOBAL ==== */

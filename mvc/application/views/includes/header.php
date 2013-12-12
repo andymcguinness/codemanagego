@@ -24,7 +24,8 @@
 
 <header class="row general-header">
     <div class="row">
-        <div class="large-10 large-uncentered medium-8 medium-push-2 small-1 small-push-5 columns title"><a href="<?php echo base_url(); ?>"><i class="icon-code"></i> <div class="hide-for-small">Code, Manage, Go!</div></a></div>
-        <div class="large-2 medium-2 small-4 columns sign-out-btn"><a href="<?php echo base_url(); ?>index.php/logout">Sign Out</a></div>
+        <div class="small-2 columns"></div>
+        <div class="large-10 large-uncentered medium-8 medium-uncentered small-3 small-centered columns title"><a href="<?php echo base_url(); ?>"><i class="icon-code"></i> <div class="hide-for-small">Code, Manage, Go!</div></a></div>
+        <div class="large-2 medium-2 small-2 columns sign-out-btn"><a class="hide-for-small" href="<?php echo base_url(); ?>index.php/logout">Sign Out</a></div>
     </div>
 </header>
