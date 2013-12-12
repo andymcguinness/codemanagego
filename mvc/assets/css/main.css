@@ -160,7 +160,7 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 
 .full-width-wrapper { margin: 2.5% !important; background: #fff; width: 95% !important; } /* I hate importants, but it will keep the code clean. */
 .two-columns-wrapper { margin: 2.5% !important; width: 95% !important; }
-.sub-content, .sub-sub-content { background: #fff; }
+.sub-content, .sub-sub-content { background: #fff; margin-bottom: 2.5%; }
 
 
 /* === PAGE-SPECIFIC STYLES === */

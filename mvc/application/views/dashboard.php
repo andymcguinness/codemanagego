@@ -3,6 +3,7 @@
             <h3>Hello, << username >>!</h3>
         </div>
 
+        <!-- Row 1 -->
         <div class="row sub-content-wrapper">
             <div class="large-3 hide-for-small columns">
                 <div class="row">
@@ -22,7 +23,8 @@
             </div>
         </div>
 
-        <div class="row sub-content-wrapper full-width-wrapper">
+        <!-- Row 2 -->
+        <div class="row sub-content-wrapper">
             <div class="large-12 small-12 columns sub-content">
                 <h3><i class="icon-newspaper"></i> Recent Activity</h3>
             </div>
