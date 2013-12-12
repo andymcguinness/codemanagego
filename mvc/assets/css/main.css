@@ -95,7 +95,7 @@ Notes: I hate importants. However, with this framework, it's helpful to keep the
 
 
 /* ==== GLOBAL ==== */
-html { background: #f1f1f1; }
+html, body { background: #f1f1f1 !important; }
 
 html a { color: #00ae5f; }
 html a:hover { color: #000; }
@@ -158,12 +158,16 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 
 /* === STRUCTURE === */
 
-.full-width-wrapper { margin: 2.5%; background: #fff; width: 95% !important; } /* I hate importants, but it will keep the code clean. */
-.two-columns-wrapper { margin: 2.5%; width: 95% !important; }
+.full-width-wrapper { margin: 2.5% !important; background: #fff; width: 95% !important; } /* I hate importants, but it will keep the code clean. */
+.two-columns-wrapper { margin: 2.5% !important; width: 95% !important; }
 .sub-content, .sub-sub-content { background: #fff; }
 
 
 /* === PAGE-SPECIFIC STYLES === */
+
+/* Register/Signup Page */
+
+.signup h3, .signin h3 { text-align: center; }
 
 /* Project Page */
 
