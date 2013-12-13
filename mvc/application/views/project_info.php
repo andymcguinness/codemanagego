@@ -19,6 +19,10 @@
                 <div class="sidebar-row">
                     <a href="#" id="project-members" class="accordion-tab"><h4><i class="icon-users"></i> Members</h4></a>
                 </div>
+
+                <div class="sidebar-row">
+                    <a href="<?php echo base_url(); ?>index.php/dashboard"><h5><i class="icon-code"></i> Back to Dashboard</h5></a>
+                </div>
             </div>
 
             <!-- Right column/main area -->
