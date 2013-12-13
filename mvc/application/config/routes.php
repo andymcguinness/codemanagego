@@ -47,6 +47,7 @@ $route['dashboard'] = 'users/dashboard';
 $route['logout'] = 'admin/logout';
 $route['projects'] = 'projects';
 $route['upload'] = 'files/file_upload';
+$route['add_task'] = 'tasks/add_tasks';
 
 
 /* End of file routes.php */

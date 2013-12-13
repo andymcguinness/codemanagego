@@ -116,6 +116,8 @@
                                     echo '</ul>';
                                 }
                             } ?>
+
+                            <a href="<?php echo base_url(); ?>index.php/add_task"><button>Add Task</button></a>
                         </div>
 
                         <div class="accordion-panel project-members">

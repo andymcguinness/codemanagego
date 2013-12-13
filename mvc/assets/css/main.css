@@ -130,9 +130,9 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 
 /* === PAGE-SPECIFIC STYLES === */
 
-/* Register/Signup Page */
+/* Simple Form Pages */
 
-.signup h3, .signin h3 { text-align: center; }
+.signup h3, .signin h3, .add-task h3 { text-align: center; }
 
 /* Project Page */
 
