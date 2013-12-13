@@ -40,7 +40,6 @@ class Projects extends CI_Controller {
 
 
             $this->load->view('includes/header');
-            $this->load->view('includes/sidebar');
 
             $project_info = $this->project_model->retrieveProjectInfo($slug);
 

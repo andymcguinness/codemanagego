@@ -125,6 +125,7 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 .full-width-wrapper { margin: 2.5% !important; background: #fff; width: 95% !important; } /* I hate importants, but it will keep the code clean. */
 .two-columns-wrapper { margin: 2.5% !important; width: 95% !important; }
 .sub-content, .sub-sub-content { background: #fff; margin-bottom: 2.5%; }
+.no-column-padding { padding-left: 0 !important; padding-right: 0 !important;}
 
 
 /* === PAGE-SPECIFIC STYLES === */
@@ -135,8 +136,8 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 
 /* Project Page */
 
-.list-tasks { list-style-type: none; }
-.project-header { padding-bottom: 0.5em; font-weight: 400; }
+.sidebar-row { margin-bottom: 0.5em; border-bottom: 1px solid #e1e1e1; padding-left: 0.9375em; padding-right: 0.9375em; }
+.sidebar-row:last-of-type { border-bottom: none; }
 
 /* Upload Page */
 
