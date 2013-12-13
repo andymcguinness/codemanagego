@@ -12,8 +12,6 @@ class File_model extends CI_Model {
 
     public function createFile($upload) {
 
-        var_dump($upload);
-
         // Putting the data together
         $data = array(
             'fil_title' => $upload["upload_data"]["file_name"],
