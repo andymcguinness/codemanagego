@@ -25,8 +25,19 @@ class User_model extends CI_Model {
         $this->db->insert('user', $data);
     }
 
-    public function getManager($usr_id) {
+    public function retrieveUser($usr_id) {
         $sql = "SELECT * from user WHERE usr_id = '$usr_id';";
+        $query = $this->db->query($sql);
+
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        } else {
+            return false;
+        }
+    }
+
+    public function retrieveUserByUsername($username) {
+        $sql = "SELECT * from user WHERE usr_username = '$username';";
         $query = $this->db->query($sql);
 
         if ($query->num_rows() > 0) {

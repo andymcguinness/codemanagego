@@ -15,22 +15,6 @@ class Projects extends CI_Controller {
         $this->load->helper( array('html', 'url', 'form') );
     }
 
-    public function index() {
-        $logged_in = $this->session->userdata('is_logged_in');
-
-        if ($logged_in == false) {
-            redirect('login');
-        } else {
-            $this->load->view('includes/header');
-            $this->load->view('includes/sidebar');
-
-            // Need to figure out how to handle this from the db side first
-            //$this->load->view('projects-list');
-
-            $this->load->view('includes/footer');
-        }
-    }
-
     public function project($slug) {
         $logged_in = $this->session->userdata('is_logged_in');
 
@@ -63,7 +47,7 @@ class Projects extends CI_Controller {
                     $files[] = "";
                 }
 
-                $manager[] = $this->user_model->getManager($project_info[0]["usr_id"]);
+                $manager[] = $this->user_model->retrieveUser($project_info[0]["usr_id"]);
 
             }
 

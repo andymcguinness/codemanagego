@@ -10,8 +10,15 @@ class Task_model extends CI_Model {
         $this->load->database($dsn);
     }
 
-    public function retrieveTask($name) {
+    public function retrieveTasksByUser($usr_id) {
+        $sql = "SELECT * from task WHERE usr_id = '$usr_id';";
+        $query = $this->db->query($sql);
 
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        } else {
+            return false;
+        }
     }
 
     public function retrieveTasksByList($list_id) {

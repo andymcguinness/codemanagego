@@ -21,6 +21,17 @@ class Project_model extends CI_Model {
         }
     }
 
+    public function retrieveProject($id) {
+        $sql = "SELECT * from project WHERE pjt_id = '$id';";
+        $query = $this->db->query($sql);
+
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        } else {
+            return false;
+        }
+    }
+
     public function retrieveProjects() {
         $sql = "SELECT * from project;";
         $query = $this->db->query($sql);
