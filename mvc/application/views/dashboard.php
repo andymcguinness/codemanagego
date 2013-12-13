@@ -13,11 +13,19 @@
                         </div>
 
                         <?php
+                        if ($project_info == '') {
+                            echo '<div class="sidebar-row">';
+                            echo '<p>No projects here. You should make one!</p>';
+                            echo '</div>';
+                        } else {
                             foreach ($project_info as $project){
                                 echo '<div class="sidebar-row">';
+                                echo '<a href="' . base_url() . 'index.php/projects/project/' . $project[0]["pjt_slug"] . '">';
                                 echo '<h4>' . $project[0]["pjt_title"] . '</h4>';
+                                echo '</a>';
                                 echo '</div>';
                             }
+                        }
                         ?>
                     </div>
                 </div>
@@ -27,6 +35,19 @@
                 <div class="row">
                     <div class="large-12 large-centered small-12 columns sub-sub-content">
                         <h3><i class="icon-signup"></i> Your Tasks</h3>
+
+                        <?php if ($tasks[0] == '') {
+                            echo '<p>No matching tasks found.</p>';
+                        } else {
+                            echo '<ul class="list-tasks">';
+
+                            $i = 1;
+                            foreach ($tasks[0] as $task) {
+                                echo '<li><input id="task' . $i . '" type="checkbox"><label for="task' . $i . '">' . $task["tsk_name"] . '</label></li>';
+                                $i++;
+                            }
+                            echo '</ul>';
+                        } ?>
                     </div>
                 </div>
             </div>

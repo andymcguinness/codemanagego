@@ -32,11 +32,20 @@ class Users extends CI_Controller {
             $user_info = $this->user_model->retrieveUserByUsername($this->session->userdata('username'));
             $projects = $this->assignment_model->getUserAssignments($user_info[0]["usr_id"]);
 
-            foreach ($projects as $project) {
-                $project_info[] = $this->project_model->retrieveProject($project["pjt_id"]);
+            if ($projects == false) {
+                $projects = '';
+                $project_info = '';
+            } else {
+                foreach ($projects as $project) {
+                    $project_info[] = $this->project_model->retrieveProject($project["pjt_id"]);
+                }
             }
 
             $tasks[] = $this->task_model->retrieveTasksByUser($user_info[0]["usr_id"]);
+
+            if ($tasks == false) {
+                $tasks = '';
+            }
 
             $data = array(
                 'username'  => $this->session->userdata('username'),
