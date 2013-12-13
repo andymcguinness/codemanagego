@@ -1,7 +1,7 @@
 <div class="row">
     <div class="two-columns-wrapper large-12 small-12 columns dashboard">
         <div class="row sub-content-wrapper">
-            <h3>Hello, << username >>!</h3>
+            <h3>Hello, <?php echo $username; ?>!</h3>
         </div>
 
         <div class="row sub-content-wrapper">

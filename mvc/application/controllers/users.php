@@ -25,7 +25,12 @@ class Users extends CI_Controller {
             redirect('login');
         } else {
             $this->load->view('includes/header');
-            $this->load->view('dashboard');
+
+            $data = array(
+                'username' => $this->session->userdata('username')
+            );
+
+            $this->load->view('dashboard', $data);
             $this->load->view('includes/footer');
         }
     }
