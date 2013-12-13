@@ -62,6 +62,9 @@ class Projects extends CI_Controller {
 
             }
 
+            $this->session->set_userdata('pjt_id', $project_info[0]["pjt_id"]);
+            $this->session->set_userdata('pjt_slug', $project_info[0]["pjt_slug"]);
+
             $data = array( // Putting it all together now
                 'project_info' => $project_info,
                 'list_info' => $list_info,

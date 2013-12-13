@@ -10,8 +10,23 @@ class File_model extends CI_Model {
         $this->load->database($dsn);
     }
 
-    public function retrieveFile($name) {
+    public function createFile($upload) {
 
+        var_dump($upload);
+
+        // Putting the data together
+        $data = array(
+            'fil_title' => $upload["upload_data"]["file_name"],
+            'fil_type'  => $upload["upload_data"]["file_type"],
+            'fil_size'  => $upload["upload_data"]["file_size"],
+            'fil_upload_time'   => date("Y/m/d H:i:s"),
+            'usr_id'    => $this->session->userdata('usr_id'),
+            'pjt_id'    => $this->session->userdata('pjt_id'),
+            'fil_path'  => $upload["upload_data"]["full_path"]
+        );
+
+        // Inserting the data
+        $this->db->insert('file', $data);
     }
 
     public function retrieveFilesByProject($pjt_id) {

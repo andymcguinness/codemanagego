@@ -32,6 +32,8 @@ class Users extends CI_Controller {
             $user_info = $this->user_model->retrieveUserByUsername($this->session->userdata('username'));
             $projects = $this->assignment_model->getUserAssignments($user_info[0]["usr_id"]);
 
+            $this->session->set_userdata('usr_id', $user_info[0]["usr_id"]);
+
             if ($projects == false) {
                 $projects = '';
                 $project_info = '';

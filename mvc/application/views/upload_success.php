@@ -1,9 +1,6 @@
-<h3>Your file was successfully uploaded!</h3>
+<div class="full-width-wrapper large-12 small-12 columns file-upload-success">
+    <h3><i class="icon-checkmark"></i> Your file was successfully uploaded!</h3>
 
-<ul>
-    <?php foreach ($upload_data as $item => $value):?>
-        <li><?php echo $item;?>: <?php echo $value;?></li>
-    <?php endforeach; ?>
-</ul>
-
-<p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+    <p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+    <p><a href="<?php echo base_url(); ?>index.php/projects/project/<?php echo $this->session->userdata('pjt_slug'); ?>">Return to your project.</a></p>
+</div>

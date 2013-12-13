@@ -17,29 +17,29 @@ class Files extends CI_Controller {
         $this->load->view('includes/header');
         $this->load->view('file_upload', array('error' => ''));
         $this->load->view('includes/footer');
-
-
     }
 
     function do_upload()
     {
         $config['upload_path'] = './uploads/';
         $config['allowed_types'] = 'gif|jpg|png|svg|php|js|css|html';
-        $config['max_size']	= '1000';
+        $config['max_size']	= '100000000';
 
         $this->load->library('upload', $config);
 
         if ( ! $this->upload->do_upload())
         {
-            $error = array('error' => $this->upload->display_errors());
+            $data = array('error' => $this->upload->display_errors());
 
             $this->load->view('includes/header');
-            $this->load->view('file_upload', $error);
+            $this->load->view('file_upload', $data);
             $this->load->view('includes/footer');
         }
         else
         {
             $data = array('upload_data' => $this->upload->data());
+
+            $this->file_model->createFile($data);
 
             $this->load->view('includes/header');
             $this->load->view('upload_success', $data);
