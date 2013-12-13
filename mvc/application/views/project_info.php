@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="accordion-panel project-files">
-                            <h4 class="file-list-header"><i class="icon-library"></i> <?php echo $project_info[0]["pjt_title"]; ?></h4>
+                            <h4><i class="icon-library"></i> <?php echo $project_info[0]["pjt_title"]; ?></h4>
 
                             <?php if ($files[0] == "") {
                                 echo '<p>No matching files found.</p>';
@@ -52,6 +52,8 @@
                                     echo '<li>Upload Time: ' . $file["fil_upload_time"] . '</li>';
                                     echo '</ul></li>';
                                 }
+
+                                echo '</ul>';
                             }?>
                         </div>
 
@@ -74,6 +76,21 @@
                                     echo '</ul>';
                                 }
                             } ?>
+                        </div>
+
+                        <div class="accordion-panel project-members">
+                            <h4><i class="icon-users"></i> Members</h4>
+                            <?php if ($members[0] == "") {
+                                echo '<p>No matching members found.</p>';
+                            } else {
+                                echo '<ul class="member-list">';
+
+                                foreach ($members as $member) {
+                                    echo '<li>' . $member[0]["usr_firstname"] . ' ' . $member[0]["usr_lastname"] . '</li>';
+                                }
+
+                                echo '</ul>';
+                            }?>
                         </div>
                     </div>
                 </div>

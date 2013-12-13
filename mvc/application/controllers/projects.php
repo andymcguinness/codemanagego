@@ -10,6 +10,7 @@ class Projects extends CI_Controller {
         $this->load->model('task_model');
         $this->load->model('file_model');
         $this->load->model('user_model');
+        $this->load->model('assignment_model');
 
         // Loading some useful extras
         $this->load->helper( array('html', 'url', 'form') );
@@ -49,6 +50,16 @@ class Projects extends CI_Controller {
 
                 $manager[] = $this->user_model->retrieveUser($project_info[0]["usr_id"]);
 
+                $members[] = $this->assignment_model->getProjectMembers($project_info[0]["pjt_id"]);
+
+                if ($members == false) {
+                    $member_info = "";
+                } else {
+                    foreach($members[0] as $member) {
+                        $member_info[] = $this->user_model->retrieveUser($member["usr_id"]);
+                    }
+                }
+
             }
 
             $data = array( // Putting it all together now
@@ -56,7 +67,8 @@ class Projects extends CI_Controller {
                 'list_info' => $list_info,
                 'tasks' => $tasks,
                 'files' => $files,
-                'manager' => $manager
+                'manager' => $manager,
+                'members' => $member_info
             );
 
             $this->load->view('project_info', $data);

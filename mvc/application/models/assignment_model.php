@@ -21,4 +21,15 @@ class Assignment_model extends CI_Model {
         }
     }
 
+    public function getProjectMembers($pjt_id) {
+        $sql = "SELECT * from assignment WHERE pjt_id = '$pjt_id';";
+        $query = $this->db->query($sql);
+
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        } else {
+            return false;
+        }
+    }
+
 }

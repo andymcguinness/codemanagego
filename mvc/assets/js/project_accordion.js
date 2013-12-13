@@ -23,6 +23,10 @@ jQuery(function($){
         else if (id == 'project-tasks') {
             $('.project-tasks').addClass('active');
         }
+
+        else if (id == 'project-members') {
+            $('.project-members').addClass('active');
+        }
     }
 
     accordion_head.click(function(){
