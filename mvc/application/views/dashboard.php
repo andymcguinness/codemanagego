@@ -56,6 +56,12 @@
         <div class="row sub-content-wrapper">
             <div class="large-12 small-12 columns sub-content">
                 <h3><i class="icon-newspaper"></i> Recent Activity</h3>
+
+                <ul class="activity-list">
+                    <li><a>Mary</a> updated the file <a>header.php</a>.</li>
+                    <li><a>Joseph</a> added "Get user flows from James" to <a>Research Sites tasks</a>.</li>
+                    <li><a>Chris</a> was added to <a>Code, Manage, Go!</a>. Say <a>hello</a>!</li>
+                </ul>
             </div>
         </div>
     </div>

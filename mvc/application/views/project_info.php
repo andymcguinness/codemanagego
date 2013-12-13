@@ -38,7 +38,28 @@
                         </div>
 
                         <div class="accordion-panel project-general active">
+                            <p><?php
+                                if ($project_info[0]["pjt_description"] == "" || $project_info[0]["pjt_description"] == 'NULL') {
+                                    echo 'This project does not yet have a description.';
+                                } else {
+                                    echo $project_info[0]["pjt_description"];
+                                }
+
+                                ?></p>
+                        </div>
+
+                        <div class="accordion-panel project-general active">
                             <h4><i class="icon-newspaper"></i> Recent Activity</h4>
+
+                            <ul class="activity-list">
+                                <?php
+                                if ($project_info[0]["pjt_slug"] == "code-manage-go") {
+                                    echo '<li><a>Chris</a> was added to <a>Code, Manage, Go!</a>. Say <a>hello</a>!</li>';
+                                } elseif ($project_info[0]["pjt_slug"] == "ad-club-site") {
+                                    echo '<li><a>Mary</a> updated the file <a>header.php</a>.</li>';
+                                }
+                                ?>
+                            </ul>
                         </div>
 
                         <div class="accordion-panel project-files">
@@ -69,7 +90,9 @@
                             </div>
 
                             <div class="row sub-content-wrapper">
-                                <button type="submit">Upload</button>
+                                <div class="large-8 large-push-1 columns">
+                                    <button type="submit">Upload</button>
+                                </div>
                             </div>
                             </form>
                         </div>
