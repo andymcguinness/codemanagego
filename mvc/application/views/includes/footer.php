@@ -5,6 +5,7 @@
 </footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/project_accordion.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
 <script>

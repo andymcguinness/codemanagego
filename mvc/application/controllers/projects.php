@@ -38,7 +38,6 @@ class Projects extends CI_Controller {
             redirect('login');
         } else {
 
-
             $this->load->view('includes/header');
 
             $project_info = $this->project_model->retrieveProjectInfo($slug);

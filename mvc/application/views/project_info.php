@@ -5,19 +5,19 @@
             <!-- Left column/sidebar area -->
             <div class="large-4 hide-for-small columns no-column-padding sub-content">
                 <div class="sidebar-row">
-                    <h3 class="project-header"><i class="icon-folder"></i> <?php echo $project_info[0]["pjt_title"]; ?></h3>
+                    <a href="#" id="project-general" class="accordion-tab"><h3 class="project-header"><i class="icon-folder"></i> <?php echo $project_info[0]["pjt_title"]; ?></h3></a>
                 </div>
 
                 <div class="sidebar-row">
-                    <h4><i class="icon-library"></i> Files</h4>
+                    <a href="#" id="project-files" class="accordion-tab"><h4><i class="icon-library"></i> Files</h4></a>
                 </div>
 
                 <div class="sidebar-row">
-                    <h4><i class="icon-signup"></i> Tasks</h4>
+                    <a href="#" id="project-tasks" class="accordion-tab"><h4><i class="icon-signup"></i> Tasks</h4></a>
                 </div>
 
                 <div class="sidebar-row">
-                    <h4><i class="icon-users"></i> Members</h4>
+                    <a href="#" id="project-members" class="accordion-tab"><h4><i class="icon-users"></i> Members</h4></a>
                 </div>
             </div>
 
@@ -25,7 +25,7 @@
             <div class="large-7 small-12 columns">
                 <div class="row">
                     <div class="large-12 large-centered columns sub-sub-content">
-                        <div class="main-row project-general">
+                        <div class="accordion-panel project-general active">
                             <h4><i class="icon-user"></i> Manager: <?php
                                 foreach ($manager as $pjt_manager) {
                                     echo $pjt_manager[0]["usr_firstname"] . ' ' . $pjt_manager[0]["usr_lastname"];
@@ -33,11 +33,11 @@
                                 ?></h4>
                         </div>
 
-                        <div class="main-row project-recent-activity">
+                        <div class="accordion-panel project-general active">
                             <h4><i class="icon-newspaper"></i> Recent Activity</h4>
                         </div>
 
-                        <div class="main-row project-files">
+                        <div class="accordion-panel project-files">
                             <h4 class="file-list-header"><i class="icon-library"></i> <?php echo $project_info[0]["pjt_title"]; ?></h4>
 
                             <?php if ($files[0] == "") {
@@ -55,7 +55,7 @@
                             }?>
                         </div>
 
-                        <div class="main-row project-tasks">
+                        <div class="accordion-panel project-tasks">
                             <?php if ($list_info == "") {
                                 echo 'No matching tasklists found.';
                             } else{

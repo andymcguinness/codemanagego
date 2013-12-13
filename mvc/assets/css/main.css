@@ -139,6 +139,9 @@ header .sign-in a:hover, header .sign-up a:hover { background: #b7b7b7; color: #
 .sidebar-row { margin-bottom: 0.5em; border-bottom: 1px solid #e1e1e1; padding-left: 0.9375em; padding-right: 0.9375em; }
 .sidebar-row:last-of-type { border-bottom: none; }
 
+.accordion-panel.project-general, .accordion-panel.project-files, .accordion-panel.project-tasks, .accordion-panel.project-members { display: none !important; visibility: hidden; }
+.accordion-panel.project-general.active, .accordion-panel.project-files.active, .accordion-panel.project-tasks.active, .accordion-panel.project-members.active { display: inherit !important; visibility: visible; }
+
 /* Upload Page */
 
 .file-upload input[type='file'] { background: #f1f1f1; color: #00ae5f; padding: 0.5em; }
